@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 01 — Azure do zero: da nuvem ao trabalho do administrador | Simulação Didática 1920×1080</title>
+  <style>
+    :root {
+      --bg-deep: #0A1628;
+      --bg-panel: #0F1E36;
+      --bg-card: #15294A;
+      --cyan: #00D4FF;
+      --cyan-soft: rgba(0, 212, 255, 0.16);
+      --text-main: #FFFFFF;
+      --text-muted: #CBD5E1;
+      --amber: #F59E0B;
+      --emerald: #10B981;
+      --blazer-blue: #1D4ED8;
+      --font-sans: "Segoe UI", Inter, system-ui, -apple-system, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #050B14;
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 12px;
+      overflow-x: hidden;
+    }
+
+    /* Palco 16:9 (Alvo 1920x1080 escalável) */
+    .stage-wrapper {
+      width: 100%;
+      max-width: 1440px;
+      aspect-ratio: 16 / 9;
+      background: radial-gradient(circle at 80% 15%, #132A4E 0%, var(--bg-deep) 65%);
+      border: 2px solid rgba(0, 212, 255, 0.35);
+      border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Barra superior discreta da aula */
+    .top-bar {
+      height: 48px;
+      background: rgba(10, 22, 40, 0.92);
+      border-bottom: 1px solid rgba(0, 212, 255, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      font-size: 14px;
+      z-index: 20;
+    }
+
+    .course-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--cyan);
+      letter-spacing: 0.3px;
+    }
+
+    .scene-indicator {
+      background: var(--cyan-soft);
+      border: 1px solid var(--cyan);
+      color: #FFF;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    /* Área principal (~80% para conteúdo didático) */
+    .content-canvas {
+      flex: 1;
+      position: relative;
+      padding: 24px 36px 96px 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .scene-slide {
+      display: none;
+      width: 100%;
+      height: 100%;
+      animation: fadeIn 0.35s ease-out;
+    }
+
+    .scene-slide.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1.slide-title {
+      font-size: 28px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    p.slide-subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    /* Destaque visual único por vez */
+    .focus-glow {
+      border: 2px solid var(--cyan) !important;
+      box-shadow: 0 0 22px rgba(0, 212, 255, 0.45) !important;
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+    }
+
+    /* Cartões e Diagramas */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-bottom: 16px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 10px;
+      padding: 16px 18px;
+      transition: all 0.3s ease;
+    }
+
+    .card-header {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--cyan);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .badge-pill {
+      font-size: 12px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(0, 212, 255, 0.18);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 212, 255, 0.4);
+      font-weight: 600;
+    }
+
+    .badge-warn {
+      background: rgba(245, 158, 11, 0.18);
+      color: #FBBF24;
+      border: 1px solid rgba(245, 158, 11, 0.5);
+    }
+
+    /* Tabelas legíveis de alto contraste */
+    table.didactic-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: rgba(15, 30, 54, 0.9);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 212, 255, 0.28);
+    }
+
+    table.didactic-table th {
+      background: rgba(0, 212, 255, 0.18);
+      color: #FFFFFF;
+      text-align: left;
+      padding: 10px 14px;
+      font-weight: 700;
+      border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    }
+
+    table.didactic-table td {
+      padding: 9px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      color: #F1F5F9;
+    }
+
+    /* Simulação Didática do Portal Azure (Cena 4) */
+    .azure-portal-mock {
+      background: #0F172A;
+      border: 2px solid var(--cyan);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 360px;
+      position: relative;
+      width: 82%;
+    }
+
+    .portal-topbar {
+      height: 42px;
+      background: #0078D4;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 20px;
+      color: #FFF;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .portal-search {
+      flex: 1;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #0F172A;
+      border-radius: 4px;
+      padding: 5px 12px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+    }
+
+    .sim-seal {
+      background: var(--amber);
+      color: #0A1628;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 4px;
+      margin-left: auto;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .portal-body {
+      flex: 1;
+      display: flex;
+      background: #111827;
+      color: #F8FAFC;
+    }
+
+    .portal-sidebar {
+      width: 185px;
+      background: #1E293B;
+      border-right: 1px solid rgba(255,255,255,0.1);
+      padding: 12px;
+      font-size: 13px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .portal-main {
+      flex: 1;
+      padding: 18px 22px;
+      position: relative;
+    }
+
+    .ptbr-overlay-banner {
+      margin-top: 14px;
+      background: rgba(0, 212, 255, 0.16);
+      border-left: 4px solid var(--cyan);
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    /* Cursor Destacado */
+    .cursor-highlight {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 158, 11, 0.22);
+      border: 2px solid var(--amber);
+      color: #FDE68A;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Avatar 3D Estilizado da Lia (Fixo na Aula 01) */
+    .lia-container {
+      position: absolute;
+      bottom: 74px;
+      right: 28px;
+      width: 17.5%;
+      max-width: 250px;
+      min-width: 185px;
+      background: linear-gradient(180deg, rgba(21, 41, 74, 0.96) 0%, rgba(10, 22, 40, 0.98) 100%);
+      border: 2px solid var(--cyan);
+      border-radius: 14px;
+      padding: 10px 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 15;
+      transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Reposicionamento automático para não cobrir elementos à direita */
+    .lia-container.pos-left {
+      right: auto;
+      left: 28px;
+    }
+
+    /* Destaque de abertura e encerramento */
+    .lia-container.pos-hero {
+      width: 24%;
+      max-width: 320px;
+      bottom: 84px;
+      right: 40px;
+      border-width: 3px;
+      box-shadow: 0 0 35px rgba(0, 212, 255, 0.35);
+    }
+
+    .lia-svg {
+      width: 100%;
+      height: auto;
+      max-height: 155px;
+      display: block;
+    }
+
+    .lia-name-tag {
+      margin-top: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mouth-anim {
+      transform-origin: center;
+      animation: speak 0.35s infinite alternate ease-in-out;
+    }
+
+    .paused .mouth-anim {
+      animation: none;
+    }
+
+    @keyframes speak {
+      0% { transform: scaleY(0.4); }
+      100% { transform: scaleY(1.35); }
+    }
+
+    /* Legenda Sincronizada PT-BR (Máximo 2 linhas) */
+    .subtitle-bar {
+      position: absolute;
+      bottom: 14px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 62%;
+      min-height: 54px;
+      background: rgba(5, 11, 20, 0.92);
+      border: 1px solid rgba(0, 212, 255, 0.4);
+      border-radius: 8px;
+      padding: 6px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.35;
+      font-weight: 600;
+      color: #FFFFFF;
+      z-index: 25;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Controles do Reprodutor / Storyboard */
+    .player-controls {
+      width: 100%;
+      max-width: 1440px;
+      margin-top: 10px;
+      background: #0F1E36;
+      border: 1px solid rgba(0, 212, 255, 0.3);
+      border-radius: 10px;
+      padding: 10px 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    button.ctrl-btn {
+      background: #1E3A5F;
+      color: #FFF;
+      border: 1px solid rgba(0, 212, 255, 0.4);
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button.ctrl-btn:hover, button.ctrl-btn.active-scene {
+      background: var(--cyan);
+      color: #0A1628;
+    }
+
+    .timecode-display {
+      font-family: Consolas, monospace;
+      font-size: 14px;
+      color: var(--cyan);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stage-wrapper" id="stage">
+    <!-- Barra de Topo -->
+    <div class="top-bar">
+      <div class="course-badge">
+        <span>☁️ AZURE DO ZERO AO AZ-104</span>
+        <span style="color:rgba(255,255,255,0.35)">|</span>
+        <span style="color:#FFF">Aula 01 — Da nuvem ao trabalho do administrador</span>
+      </div>
+      <div class="scene-indicator" id="sceneBadge">Cena 1 — 00:00–01:00 | Abertura</div>
+    </div>
+
+    <!-- Área de Conteúdo (80% da tela) -->
+    <div class="content-canvas">
+
+      <!-- CENA 1: 00:00 - 01:00 -->
+      <div class="scene-slide active" id="scene-1">
+        <div>
+          <span class="badge-pill">MÓDULO 01 • FUNDAMENTOS, IDENTIDADE E GOVERNANÇA</span>
+          <h1 class="slide-title" style="margin-top:8px;">Cenário Contínuo: Oficina Horizonte</h1>
+          <p class="slide-subtitle">Primeira ocorrência da sigla: <strong>AZ-104</strong> = Exame da certificação <em>Microsoft Certified: Azure Administrator Associate</em> (Administrador do Azure).</p>
+        </div>
+
+        <!-- Fluxo animado da Ordem de Serviço -->
+        <div class="grid-3" style="width: 78%;">
+          <div class="card focus-glow" id="c1-box1">
+            <div class="card-header">1. Computador da Ana <span class="badge-pill">Atendimento</span></div>
+            <p style="font-size:14px; color:#E2E8F0; line-height:1.45;">
+              <strong>Ana</strong> consulta informações e registra:<br/>
+              <code style="color:var(--cyan);">Ordem de Serviço #1042 — Revisão de Freios (Veículo Fictício)</code>
+            </p>
+          </div>
+          <div class="card" id="c1-box2">
+            <div class="card-header">2. Sistema da Oficina <span class="badge-pill">Bruno (Admin)</span></div>
+            <p style="font-size:14px; color:#E2E8F0; line-height:1.45;">
+              Recebe a ordem de serviço.<br/>
+              <strong>Bruno</strong> administra os recursos técnicos para o sistema funcionar com segurança.
+            </p>
+          </div>
+          <div class="card" id="c1-box3">
+            <div class="card-header">3. Gestão e Custos <span class="badge-pill">Equipe</span></div>
+            <p style="font-size:14px; color:#E2E8F0; line-height:1.45;">
+              A <strong>equipe</strong> acompanha o consumo mensal.<br/>
+              <em>Não é necessário ter conta Azure para acompanhar esta aula!</em>
+            </p>
+          </div>
+        </div>
+
+        <!-- As 3 perguntas destacadas uma por vez -->
+        <div class="grid-3" style="width: 78%;">
+          <div class="card" style="border-left: 4px solid var(--cyan);">
+            <strong style="color:var(--cyan); font-size:17px;">❓ 1. Onde roda?</strong>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">Qual servidor e qual modelo sustentam o sistema da oficina?</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--cyan);">
+            <strong style="color:var(--cyan); font-size:17px;">🔐 2. Quem acessa?</strong>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">Como garantir que apenas pessoas autorizadas entrem?</p>
+          </div>
+          <div class="card" style="border-left: 4px solid var(--cyan);">
+            <strong style="color:var(--cyan); font-size:17px;">📊 3. Quanto custa?</strong>
+            <p style="font-size:13px; color:var(--text-muted); margin-top:4px;">Como organizar e controlar os recursos contratados?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENA 2: 01:00 - 03:00 -->
+      <div class="scene-slide" id="scene-2">
+        <div>
+          <span class="badge-pill">CENA 2 • O QUE SIGNIFICA USAR NUVEM (TI = TECNOLOGIA DA INFORMAÇÃO)</span>
+          <h1 class="slide-title" style="margin-top:8px;">Do Computador da Ana até a Plataforma Microsoft Azure</h1>
+          <p class="slide-subtitle">Acompanhando a mesma <strong>Ordem de Serviço #1042</strong> em dois ambientes: o servidor físico não desapareceu!</p>
+        </div>
+
+        <!-- Desenho simples: Computador -> Internet -> Aplicação em nuvem -->
+        <div class="grid-3" style="margin-bottom:12px;">
+          <div class="card">
+            <div class="card-header">🖥️ Servidor</div>
+            <p style="font-size:13.5px; color:#E2E8F0;">Computador preparado para fornecer um serviço a outros computadores pela rede.</p>
+          </div>
+          <div class="card focus-glow">
+            <div class="card-header">⚙️ Aplicação</div>
+            <p style="font-size:13.5px; color:#E2E8F0;">O software em si: o programa de ordens de serviço usado pela Ana.</p>
+          </div>
+          <div class="card">
+            <div class="card-header">💾 Armazenamento</div>
+            <p style="font-size:13.5px; color:#E2E8F0;">Local de persistência dos dados, onde os registros ficam gravados sem sumir.</p>
+          </div>
+        </div>
+
+        <!-- Contraposição visual: Sala própria vs Nuvem Azure -->
+        <div class="grid-2" style="width: 80%; margin-left: auto;">
+          <div class="card">
+            <div class="card-header">🏢 Sala de Servidores da Empresa <span class="badge-pill">Local</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0; line-height:1.45;">
+              <code>[Ana] ➔ [Rede Local] ➔ [Servidor Físico na Oficina]</code><br/>
+              • A Oficina Horizonte compra e mantém o equipamento físico, energia, refrigeração, cabos, discos, sistema e aplicação.
+            </p>
+          </div>
+          <div class="card focus-glow">
+            <div class="card-header">☁️ Serviços Contratados no Azure <span class="badge-pill">Nuvem Microsoft</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0; line-height:1.45;">
+              <code>[Ana] ➔ [Internet] ➔ [Aplicação e Dados no Azure]</code><br/>
+              • <strong>Há servidores físicos</strong> (nos datacenters da Microsoft).<br/>
+              • <span style="color:#FBBF24;">⚠️ Nuvem não promete economia automática:</span> exige administração!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENA 3: 03:00 - 06:00 -->
+      <div class="scene-slide" id="scene-3">
+        <div>
+          <span class="badge-pill">CENA 3 • IaaS, PaaS E SaaS + MATRIZ DE RESPONSABILIDADE COMPARTILHADA</span>
+          <h1 class="slide-title" style="margin-top:6px;">Três Modelos de Serviço com o Mesmo Negócio</h1>
+          <p class="slide-subtitle">Siglas: <strong>IaaS</strong> (Infraestrutura como Serviço) • <strong>VM</strong> (Máquina Virtual) • <strong>PaaS</strong> (Plataforma como Serviço) • <strong>SaaS</strong> (Software como Serviço)</p>
+        </div>
+
+        <!-- 3 Cartões Animados -->
+        <div class="grid-3" style="margin-bottom:10px;">
+          <div class="card">
+            <div class="card-header">1. IaaS <span class="badge-pill">Azure Virtual Machines</span></div>
+            <p style="font-size:13px; color:#E2E8F0;">
+              <strong>Máquina Virtual (VM)</strong> + Sistema Operacional + Aplicação da Oficina.<br/>
+              <strong>Equipe administra:</strong> Sistema operacional, aplicação e dados.
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-header">2. PaaS <span class="badge-pill">Azure App Service</span></div>
+            <p style="font-size:13px; color:#E2E8F0;">
+              Aplicação publicada em uma <strong>plataforma gerenciada</strong>.<br/>
+              <strong>Equipe administra:</strong> Aplicação, configurações e dados (sem gerir o SO).
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-header">3. SaaS <span class="badge-pill badge-warn">Exemplo: Microsoft 365</span></div>
+            <p style="font-size:13px; color:#E2E8F0;">
+              Aplicação pronta para uso.<br/>
+              <strong style="color:#FBBF24;">Nota explícita:</strong> Exemplo de SaaS — <em>não é um recurso criado neste laboratório Azure.</em>
+            </p>
+          </div>
+        </div>
+
+        <!-- Matriz Simplificada de 4 Linhas + Colunas Exemplo / O que a equipe administra -->
+        <table class="didactic-table" style="width: 80%; margin-left: auto;">
+          <thead>
+            <tr>
+              <th>Camada (Matriz de 4 Linhas)</th>
+              <th>IaaS (Ex.: Azure Virtual Machines)</th>
+              <th>PaaS (Ex.: Azure App Service)</th>
+              <th>SaaS (Ex.: Microsoft 365 — Exemplo)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Infraestrutura física</strong></td>
+              <td>Microsoft</td>
+              <td>Microsoft</td>
+              <td>Microsoft</td>
+            </tr>
+            <tr>
+              <td><strong>2. Sistema operacional</strong></td>
+              <td><strong style="color:var(--cyan);">Equipe da Oficina (Cliente)</strong></td>
+              <td>Microsoft</td>
+              <td>Microsoft</td>
+            </tr>
+            <tr>
+              <td><strong>3. Aplicação / configurações</strong></td>
+              <td><strong style="color:var(--cyan);">Equipe da Oficina (Cliente)</strong></td>
+              <td><strong style="color:#FBBF24;">Compartilhado (Cliente configura)</strong></td>
+              <td><strong style="color:#FBBF24;">Compartilhado (Cliente configura)</strong></td>
+            </tr>
+            <tr style="background: rgba(0, 212, 255, 0.14);">
+              <td><strong>4. Dados / identidades</strong></td>
+              <td><strong style="color:#10B981;">SEMPRE Equipe (Cliente)</strong></td>
+              <td><strong style="color:#10B981;">SEMPRE Equipe (Cliente)</strong></td>
+              <td><strong style="color:#10B981;">SEMPRE Equipe (Cliente)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- CENA 4: 06:00 - 09:00 -->
+      <div class="scene-slide" id="scene-4">
+        <div>
+          <span class="badge-pill">CENA 4 • NAVEGAÇÃO NO PORTAL AZURE E PERCURSO DO CURSO AZ-104</span>
+          <h1 class="slide-title" style="margin-top:6px;">Reconhecendo as 4 Peças no Portal Azure (Sem Criar Recursos)</h1>
+        </div>
+
+        <!-- Simulação Didática do Portal Azure -->
+        <div class="azure-portal-mock">
+          <div class="portal-topbar">
+            <span>≡ Microsoft Azure</span>
+            <div class="portal-search focus-glow" id="portalSearchBox">
+              <span>🔍</span>
+              <span id="portalSearchText">Virtual machines</span>
+              <span class="cursor-highlight" style="margin-left:auto;">🖱️ Clique na Busca</span>
+            </div>
+            <span class="sim-seal">Simulação didática</span>
+          </div>
+          <div class="portal-body">
+            <div class="portal-sidebar">
+              <div style="color:#94A3B8; font-size:11px; text-transform:uppercase;">Serviços Localizados</div>
+              <div style="cursor:pointer; color:var(--cyan); font-weight:700;" onclick="setPortalService(0)">1. Virtual machines</div>
+              <div style="cursor:pointer;" onclick="setPortalService(1)">2. Storage accounts</div>
+              <div style="cursor:pointer;" onclick="setPortalService(2)">3. Virtual networks</div>
+              <div style="cursor:pointer;" onclick="setPortalService(3)">4. Microsoft Entra ID</div>
+              <hr style="border-color:rgba(255,255,255,0.1); margin:4px 0;"/>
+              <div style="font-size:11.5px; color:#CBD5E1;">
+                <strong>Percurso AZ-104:</strong><br/>
+                • Identidade/Governança<br/>
+                • Armazenamento<br/>
+                • Computação<br/>
+                • Redes<br/>
+                • Monitoramento
+              </div>
+            </div>
+            <div class="portal-main" id="portalMainView">
+              <div style="display:flex; align-items:center; justify-content:space-between;">
+                <div>
+                  <h2 style="font-size:20px; color:#FFF;" id="portalBladeTitle">Virtual machines (Máquinas virtuais)</h2>
+                  <p style="font-size:12.5px; color:#94A3B8;" id="portalBladeSub">Estado inicial: Busca global ➔ Ação: Selecionar serviço ➔ Resultado verificável: Página de listagem aberta</p>
+                </div>
+                <span class="badge-pill badge-warn">Nenhum recurso criado / Sem custos</span>
+              </div>
+
+              <div style="margin-top:14px; padding:14px; background:#1E293B; border-radius:6px; font-size:13px; color:#CBD5E1;" id="portalListContent">
+                <strong>Listagem de recursos:</strong> <code>No virtual machines to display</code> (Nenhuma máquina virtual criada neste momento).
+              </div>
+
+              <div class="ptbr-overlay-banner" id="portalBusinessConnection">
+                <strong>Conexão com a Oficina Horizonte — EXECUTAR:</strong> Onde o Bruno pode rodar o servidor do sistema de ordens de serviço em modelo <strong>IaaS</strong>. *(Clique nos 4 itens à esquerda para inspecionar cada tela)*
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENA 5: 09:00 - 11:00 -->
+      <div class="scene-slide" id="scene-5">
+        <div>
+          <span class="badge-pill badge-warn">EXERCÍCIOS AUTORAIS DE FIXAÇÃO • NÃO SÃO QUESTÕES REAIS DA MICROSOFT</span>
+          <h1 class="slide-title" style="margin-top:6px;">Sua Vez de Decidir como Administrador(a)!</h1>
+        </div>
+
+        <div class="grid-3" style="width: 80%;">
+          <div class="card focus-glow">
+            <div class="card-header">Pergunta 1 <span class="badge-pill">Pausa: 5s</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0; margin-bottom:8px;">
+              <em>“A oficina precisa instalar e manter seu próprio sistema operacional. Qual dos três modelos combina mais diretamente com essa necessidade?”</em>
+            </p>
+            <div style="font-size:13px; line-height:1.6;">
+              <strong style="color:var(--emerald);">✅ A) IaaS (Gabarito)</strong><br/>
+              B) PaaS<br/>
+              C) SaaS<br/>
+              <span style="color:var(--text-muted); font-size:12px;">Justificativa: No IaaS (ex.: VM), a equipe administra o sistema operacional.</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Pergunta 2 <span class="badge-pill">Pausa: 5s</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0; margin-bottom:8px;">
+              <em>“Colocar a aplicação na nuvem elimina a necessidade de cuidar dos acessos dos funcionários?”</em>
+            </p>
+            <div style="font-size:13px; line-height:1.55;">
+              <strong style="color:var(--emerald);">✅ Resposta: NÃO!</strong><br/>
+              <span style="color:var(--text-muted); font-size:12.5px;">A equipe continua responsável pelos acessos e identidades que administra. Serviço gerenciado ≠ responsabilidade eliminada.</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">Atividade Prática <span class="badge-pill">Exemplo Preenchido</span></div>
+            <p style="font-size:13px; color:#E2E8F0; margin-bottom:6px;">
+              Desenhe a aplicação, os dados e quem terá acesso:
+            </p>
+            <div style="font-size:13px; background:rgba(0,212,255,0.1); padding:8px; border-radius:6px; border:1px solid rgba(0,212,255,0.3);">
+              • <strong>Aplicação:</strong> sistema de ordens<br/>
+              • <strong>Dados:</strong> registros da oficina<br/>
+              • <strong>Acesso:</strong> equipe de atendimento (Ana) e administração (Bruno)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENA 6: 11:00 - 12:00 -->
+      <div class="scene-slide" id="scene-6">
+        <div>
+          <span class="badge-pill">CENA 6 • RECAPITULAÇÃO NO DESENHO E PRÓXIMO PASSO</span>
+          <h1 class="slide-title" style="margin-top:6px;">Respondendo às 3 Perguntas no Desenho da Oficina Horizonte</h1>
+        </div>
+
+        <!-- Desenho visual respondendo às 3 perguntas (sem bloco de texto corrido) -->
+        <div class="grid-3" style="width: 80%;">
+          <div class="card focus-glow">
+            <div class="card-header">1. Onde roda? <span class="badge-pill">Executar/Guardar/Conectar</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0;">
+              <strong>Azure Virtual Machines (VM = IaaS)</strong> ou <strong>App Service (PaaS)</strong> + <strong>Storage accounts</strong> + <strong>Virtual networks</strong>.
+            </p>
+          </div>
+          <div class="card focus-glow">
+            <div class="card-header">2. Quem acessa? <span class="badge-pill">Identificar</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0;">
+              Identidades e permissões sob cuidado da equipe no <strong>Microsoft Entra ID</strong> (Ana e Bruno).
+            </p>
+          </div>
+          <div class="card focus-glow">
+            <div class="card-header">3. Quanto custa? <span class="badge-pill">Governança</span></div>
+            <p style="font-size:13.5px; color:#E2E8F0;">
+              Monitorado pela equipe de custos. <strong>Hoje: 0 recursos criados</strong> (organização antes do primeiro clique!).
+            </p>
+          </div>
+        </div>
+
+        <!-- Fontes oficiais e data de revisão 29/09/2026 -->
+        <div class="card" style="width: 80%; border-color: rgba(0,212,255,0.45); padding: 12px 16px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+            <strong style="color:var(--cyan); font-size:14px;">📚 Fontes Oficiais Microsoft Learn</strong>
+            <span class="badge-pill">Data de revisão: 29/09/2026</span>
+          </div>
+          <p style="font-size:12.5px; color:#E2E8F0; line-height:1.45;">
+            1. <strong>Responsabilidade compartilhada e modelos de serviço:</strong> <code>https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility</code><br/>
+            2. <strong>Guia de estudo oficial AZ-104 vigente:</strong> <code>https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104</code><br/>
+            <em style="color:var(--text-muted);">Nota: Este curso desenvolve competências práticas de administração, sem prometer aprovação automática na certificação.</em>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Avatar Animado da Apresentadora Lia (Rig v3 com 11 visemas geométricos PT-BR, cortina palpebral 100% opaca e gestos articulados em plano médio) -->
+    <div class="lia-container pos-hero" id="liaAvatarBox">
+      <img id="lia3dImg" src="assets/rig_v3/med_rest_smile.jpg" alt="Apresentadora Lia - Avatar 3D Estilizado (Nano Banana Rig v3)" style="width:100%; aspect-ratio:1/1; border-radius:10px; border:1.5px solid rgba(0,212,255,0.45); display:block; object-fit:contain; background:#09182D; transition: transform 0.25s ease;" />
+      <div class="lia-name-tag">
+        <span id="liaActingBadge">🎙️ Lia — Instrutora Azure (Nano Banana Sync v3)</span>
+      </div>
+    </div>
+
+    <!-- Barra de Legendas PT-BR (Máximo 2 linhas) -->
+    <div class="subtitle-bar" id="subtitleBar">
+      <div>Bem-vinda, bem-vindo! Eu sou a Lia. Se Azure ainda parece um painel cheio</div>
+      <div>de nomes estranhos, fica comigo: vamos começar do zero!</div>
+    </div>
+  </div>
+
+  <!-- Áudio Master Renderizado da Cena (Sincronização determinística por audio.currentTime) -->
+  <audio id="sceneAudioPlayer" preload="auto" style="display:none;"></audio>
+
+  <!-- Controles de Navegação pelas 6 Cenas -->
+  <div class="player-controls">
+    <div class="btn-group">
+      <button class="ctrl-btn active-scene" onclick="goToScene(1)" id="btn-s1">Cena 1 (00:00–01:00)</button>
+      <button class="ctrl-btn" onclick="goToScene(2)" id="btn-s2">Cena 2 (01:00–03:00)</button>
+      <button class="ctrl-btn" onclick="goToScene(3)" id="btn-s3">Cena 3 (03:00–06:00)</button>
+      <button class="ctrl-btn" onclick="goToScene(4)" id="btn-s4">Cena 4 (06:00–09:00)</button>
+      <button class="ctrl-btn" onclick="goToScene(5)" id="btn-s5">Cena 5 (09:00–11:00)</button>
+      <button class="ctrl-btn" onclick="goToScene(6)" id="btn-s6">Cena 6 (11:00–12:00)</button>
+    </div>
+    <div class="btn-group">
+      <button class="ctrl-btn" onclick="toggleSpeech()" id="ttsBtn">🔊 Ouvir Áudio Master (Sync v3)</button>
+      <span class="timecode-display" id="timecodeLabel">00:00.00 • 30 fps (Nano Banana v3)</span>
+    </div>
+  </div>
+
+  <script>
+    const scenesData = {
+      1: {
+        badge: "Cena 1 — 00:00–01:00 | Abertura com problema concreto",
+        time: "00:00.00 / Cena 1 • 30 fps",
+        liaPos: "pos-hero",
+        shotType: "MEDIUM",
+        audioSrc: "videos/cena-01-abertura.mp4",
+        defaultRig: "assets/rig_v3/med_rest_smile.jpg",
+        subLine1: "“Bem-vinda, bem-vindo! Eu sou a Lia. Se Azure ainda parece um painel cheio",
+        subLine2: "de nomes estranhos, fica comigo. Vamos começar do zero e praticar!”",
+        narration: "Bem-vinda, bem-vindo! Eu sou a Lia. Se Azure ainda parece um painel cheio de nomes estranhos, fica comigo. Vamos começar do zero e transformar esses nomes em tarefas que você consegue entender e praticar. No nosso curso rumo ao AZ-104, a certificação de Administrador do Azure, vamos acompanhar a Oficina Horizonte, com a Ana no atendimento, o Bruno na administração e a equipe que acompanha custos, respondendo: Primeiro, onde roda? Segundo, quem acessa? E terceiro, quanto custa?"
+      },
+      2: {
+        badge: "Cena 2 — 01:00–03:00 | O que significa usar nuvem",
+        time: "00:00.00 / Cena 2 • 30 fps",
+        liaPos: "pos-left",
+        shotType: "MEDIUM",
+        audioSrc: "videos/cena-02-o-que-significa-usar-nuvem.mp4",
+        defaultRig: "assets/rig_v3/med_palm_closed.jpg",
+        subLine1: "“O servidor não desapareceu. Mudou quem cuida de cada parte —",
+        subLine2: "e é aí que começa o trabalho de administração.”",
+        narration: "Quando a Ana salva uma ordem de serviço, o pedido passa pela internet e chega ao servidor, que fornece o serviço, à aplicação, que é o software, e ao armazenamento, que guarda os dados. O Azure é a plataforma de nuvem da Microsoft. Os equipamentos físicos continuam existindo nos centros de dados da Microsoft, e atenção: usar nuvem não garante economia automática. O servidor não desapareceu. Mudou quem cuida de cada parte — e é aí que começa o trabalho de administração."
+      },
+      3: {
+        badge: "Cena 3 — 03:00–06:00 | Três modelos com o mesmo negócio",
+        time: "00:00.00 / Cena 3 • 30 fps",
+        liaPos: "pos-left",
+        shotType: "MEDIUM",
+        audioSrc: "videos/cena-03-tres-modelos-iaas-paas-saas.mp4",
+        defaultRig: "assets/rig_v3/med_enum1_closed.jpg",
+        subLine1: "Dados, identidades e configurações sob controle do cliente",
+        subLine2: "continuam exigindo cuidado da equipe em IaaS, PaaS e SaaS.",
+        narration: "Temos três modelos para o mesmo negócio: Primeiro, IaaS, Infraestrutura como Serviço, como as Azure Virtual Machines, onde a equipe administra o sistema operacional e a aplicação. Depois, PaaS, Plataforma como Serviço, como o Azure App Service, onde publicamos a aplicação em uma plataforma gerenciada. E SaaS, Software como Serviço, tendo o Microsoft 365 como exemplo de aplicação pronta, que não será criada neste laboratório Azure. E atenção: dados, identidades e configurações sob controle do cliente continuam sendo responsabilidade da equipe!"
+      },
+      4: {
+        badge: "Cena 4 — 06:00–09:00 | O que veremos no portal e no curso",
+        time: "00:00.00 / Cena 4 • 30 fps",
+        liaPos: "",
+        shotType: "MEDIUM",
+        audioSrc: "videos/cena-04-portal-azure-e-curso.mp4",
+        defaultRig: "assets/rig_v3/med_point_closed.jpg",
+        subLine1: "No Portal Azure: Virtual machines (Executar), Storage accounts (Guardar),",
+        subLine2: "Virtual networks (Conectar) e Microsoft Entra ID (Identificar).",
+        narration: "Observe este exemplo na tela! Na nossa simulação didática do portal Azure, localizamos na busca, um por vez e sem criar recursos pagos: Primeiro, Virtual machines para executar; Depois, Storage accounts para guardar; Virtual networks para conectar; e Microsoft Entra ID para identificar. Esse é o percurso do administrador rumo ao AZ-104: identidade e governança, armazenamento, computação, redes e monitoramento."
+      },
+      5: {
+        badge: "Cena 5 — 09:00–11:00 | Participação do aluno",
+        time: "00:00.00 / Cena 5 • 30 fps",
+        liaPos: "",
+        shotType: "CLOSE",
+        audioSrc: "videos/cena-05-participacao-do-aluno.mp4",
+        defaultRig: "assets/rig_v3/close_rest.jpg",
+        subLine1: "1) Manter o próprio Sistema Operacional = A) IaaS.",
+        subLine2: "2) Nuvem elimina cuidar dos acessos? Não! A equipe continua responsável.",
+        narration: "Vamos praticar! Primeira pergunta: A oficina precisa instalar e manter seu próprio sistema operacional. Qual dos três modelos combina mais diretamente com essa necessidade? A resposta correta é A, IaaS, pois a equipe administra o sistema operacional. Segunda pergunta: colocar a aplicação na nuvem elimina a necessidade de cuidar dos acessos dos funcionários? Não! A equipe continua responsável pelos acessos que administra."
+      },
+      6: {
+        badge: "Cena 6 — 11:00–12:00 | Recapitulação e próximo passo",
+        time: "00:00.00 / Cena 6 • 30 fps",
+        liaPos: "pos-hero",
+        shotType: "CLOSE",
+        audioSrc: "videos/cena-06-recapitulacao-e-proximo-passo.mp4",
+        defaultRig: "assets/rig_v3/close_smile.jpg",
+        subLine1: "“Na próxima aula, vamos entrar no portal e entender onde você está trabalhando",
+        subLine2: "antes de clicar em Criar. Organização começa antes do primeiro recurso!”",
+        narration: "Na próxima aula, vamos entrar no portal e entender onde você está trabalhando antes de clicar em Criar. Organização começa antes do primeiro recurso! Confira na tela as fontes oficiais da Microsoft revisadas em 29 de setembro de 2026."
+      }
+    };
+
+    const portalServices = [
+      {
+        search: "Virtual machines",
+        title: "Virtual machines (Máquinas virtuais)",
+        list: "No virtual machines to display (Nenhuma máquina virtual criada — visualização de listagem).",
+        conn: "<strong>Conexão com a Oficina Horizonte — EXECUTAR:</strong> Onde o Bruno administra servidores virtuais (VM) no modelo <strong>IaaS</strong>."
+      },
+      {
+        search: "Storage accounts",
+        title: "Storage accounts (Contas de armazenamento)",
+        list: "No storage accounts to display (Nenhuma conta de armazenamento criada — visualização de listagem).",
+        conn: "<strong>Conexão com a Oficina Horizonte — GUARDAR:</strong> Onde os registros e arquivos das ordens de serviço ficam persistidos."
+      },
+      {
+        search: "Virtual networks",
+        title: "Virtual networks (Redes virtuais)",
+        list: "No virtual networks to display (Nenhuma rede virtual criada — visualização de listagem).",
+        conn: "<strong>Conexão com a Oficina Horizonte — CONECTAR:</strong> Rede virtual privativa que comunica com segurança servidores e dados."
+      },
+      {
+        search: "Microsoft Entra ID",
+        title: "Microsoft Entra ID (Identidade e acesso)",
+        list: "Tenant: Oficina Horizonte (Default Directory) — Visão geral de usuários, grupos e acessos.",
+        conn: "<strong>Conexão com a Oficina Horizonte — IDENTIFICAR:</strong> Onde a equipe controla quem é a Ana, quem é o Bruno e quais permissões cada um possui."
+      }
+    ];
+
+    let currentScene = 1;
+    let rafId = null;
+    let isSpeaking = false;
+    let currentTimeline = [];
+
+    // Constrói uma linha do tempo fonética PT-BR parametrizada em [0..1] da duração do áudio da cena,
+    // preservando o enquadramento (MEDIUM vs CLOSE) sem saltos de escala em pausas e incluindo
+    // arcos de preparação -> ápice -> sustentação -> retorno de gestos em plano médio.
+    function buildNormalizedTimelinePTBR(text, shotType) {
+      const clean = text.toLowerCase();
+      const rawTokens = [];
+      let activeGesture = 'med_rest';
+
+      const words = clean.split(/\s+/);
+      for (const w of words) {
+        let nextGesture = activeGesture;
+        if (w.includes('primeir') || w.includes('1')) nextGesture = 'med_enum1';
+        else if (w.includes('segund') || w.includes('depois') || w.includes('2')) nextGesture = 'med_enum2';
+        else if (w.includes('observe') || w.includes('tela') || w.includes('busca') || w.includes('esquerda')) nextGesture = 'med_point';
+        else if (w.includes('acompanhar') || w.includes('modelos') || w.includes('pedido') || w.includes('caminhos')) nextGesture = 'med_palm';
+        else if (w.includes('atenção') || w.includes('servidor') || w.includes('responsabilidade')) nextGesture = 'med_rest';
+
+        // Se mudou o gesto em plano médio, insere fase de preparação (anticipation) antes da tônica
+        if (shotType === 'MEDIUM' && nextGesture !== activeGesture && nextGesture !== 'med_rest') {
+          const prepName = nextGesture === 'med_point' ? 'med_prep_palm' : nextGesture.replace('med_', 'med_prep_');
+          rawTokens.push({ gesture: prepName, viseme: 'closed', weight: 1.4 });
+        }
+        activeGesture = nextGesture;
+
+        for (let i = 0; i < w.length; i++) {
+          const ch = w[i];
+          const nextCh = w[i + 1] || '';
+          if (/[pbm]/.test(ch)) {
+            rawTokens.push({ gesture: activeGesture, viseme: 'mbp', weight: 1.15 });
+          } else if (/[fv]/.test(ch)) {
+            rawTokens.push({ gesture: activeGesture, viseme: 'fv', weight: 1.05 });
+          } else if (/[oóôõuú]/.test(ch)) {
+            rawTokens.push({ gesture: activeGesture, viseme: 'ou_50', weight: 0.45 });
+            rawTokens.push({ gesture: activeGesture, viseme: 'ou', weight: 1.15 });
+          } else if (/[aáàâã]/.test(ch)) {
+            rawTokens.push({ gesture: activeGesture, viseme: 'a_75', weight: 0.45 });
+            rawTokens.push({ gesture: activeGesture, viseme: 'a', weight: 1.25 });
+          } else if (/[eéêií]/.test(ch)) {
+            rawTokens.push({ gesture: activeGesture, viseme: 'ei_50', weight: 0.5 });
+            rawTokens.push({ gesture: activeGesture, viseme: 'ei', weight: 1.0 });
+          } else if (/[,.;:!?—]/.test(ch)) {
+            // Na pausa, mantém o mesmo enquadramento (MEDIUM ou CLOSE) sem salto de escala!
+            rawTokens.push({ gesture: activeGesture, viseme: 'closed', weight: 2.4 });
+            activeGesture = 'med_rest';
+          } else if (/[tdkgcçszlrnh]/.test(ch) && !/[aeiouáéíóúâêôãõ]/.test(nextCh)) {
+            rawTokens.push({ gesture: activeGesture, viseme: 'ei_25', weight: 0.55 });
+          }
+        }
+        rawTokens.push({ gesture: activeGesture, viseme: 'ei_25', weight: 0.35 });
+      }
+      rawTokens.push({ gesture: 'med_rest', viseme: 'closed', weight: 2.0 });
+
+      const totalWeight = rawTokens.reduce((acc, t) => acc + t.weight, 0) || 1;
+      let accum = 0;
+      return rawTokens.map(t => {
+        const startNorm = accum / totalWeight;
+        accum += t.weight;
+        const endNorm = accum / totalWeight;
+        return { ...t, startNorm, endNorm };
+      });
+    }
+
+    function resolveRigV3Frame(shotType, gesture, viseme, isBlinkHalf, isBlinkFull) {
+      if (shotType === 'CLOSE') {
+        if (isBlinkFull || isBlinkHalf) return 'assets/rig_v3/close_blink.jpg';
+        const closeMap = {
+          closed: 'rest',
+          rest: 'rest',
+          mbp: 'mbp',
+          fv: 'fv',
+          ou_50: 'ou_50',
+          ou: 'ou',
+          ei_25: 'ei_25',
+          ei_50: 'ei_50',
+          ei: 'ei',
+          a_75: 'a_75',
+          a: 'a',
+          smile: 'smile'
+        };
+        return `assets/rig_v3/close_${closeMap[viseme] || 'rest'}.jpg`;
+      }
+      // MEDIUM SHOT: nunca salta para close_* durante pausas ou piscadas
+      if (gesture.startsWith('med_prep_')) {
+        return `assets/rig_v3/${gesture}.jpg`;
+      }
+      if (isBlinkFull || isBlinkHalf) {
+        return `assets/rig_v3/${gesture}_blink.jpg`;
+      }
+      const medVisemeMap = {
+        closed: 'closed',
+        rest: 'closed',
+        mbp: 'mbp',
+        fv: 'fv',
+        ou_50: 'ou',
+        ou: 'ou',
+        ei_25: 'fv',
+        ei_50: 'ei',
+        ei: 'ei',
+        a_75: 'ei',
+        a: 'a',
+        smile: 'smile'
+      };
+      const mappedVis = medVisemeMap[viseme] || 'closed';
+      return `assets/rig_v3/${gesture}_${mappedVis}.jpg`;
+    }
+
+    // Piscadas naturais orgânicas quando em repouso
+    function scheduleNextNaturalBlink() {
+      const delayMs = 3100 + Math.random() * 2400;
+      setTimeout(() => {
+        if (!isSpeaking) {
+          const img = document.getElementById('lia3dImg');
+          const data = scenesData[currentScene];
+          if (img && data) {
+            const prevSrc = img.src;
+            const blinkSrc = data.shotType === 'CLOSE' ? 'assets/rig_v3/close_blink.jpg' : 'assets/rig_v3/med_rest_blink.jpg';
+            img.src = blinkSrc;
+            setTimeout(() => { if (!isSpeaking) img.src = data.defaultRig || prevSrc; }, 165);
+          }
+        }
+        scheduleNextNaturalBlink();
+      }, delayMs);
+    }
+    scheduleNextNaturalBlink();
+
+    function goToScene(num) {
+      stopLipSync();
+      currentScene = num;
+      document.querySelectorAll('.scene-slide').forEach(el => el.classList.remove('active'));
+      document.getElementById('scene-' + num).classList.add('active');
+
+      document.querySelectorAll('.ctrl-btn').forEach(el => el.classList.remove('active-scene'));
+      const btn = document.getElementById('btn-s' + num);
+      if (btn) btn.classList.add('active-scene');
+
+      const data = scenesData[num];
+      document.getElementById('sceneBadge').textContent = data.badge;
+      document.getElementById('timecodeLabel').textContent = data.time;
+      document.getElementById('subtitleBar').innerHTML = `<div>${data.subLine1}</div><div>${data.subLine2}</div>`;
+
+      const liaBox = document.getElementById('liaAvatarBox');
+      liaBox.className = 'lia-container ' + data.liaPos;
+
+      const img = document.getElementById('lia3dImg');
+      if (img) img.src = data.defaultRig;
+    }
+
+    function setPortalService(idx) {
+      const s = portalServices[idx];
+      document.getElementById('portalSearchText').textContent = s.search;
+      document.getElementById('portalBladeTitle').textContent = s.title;
+      document.getElementById('portalListContent').innerHTML = `<strong>Listagem de recursos:</strong> <code>${s.list}</code>`;
+      document.getElementById('portalBusinessConnection').innerHTML = s.conn;
+    }
+
+    function stopLipSync() {
+      isSpeaking = false;
+      if (rafId) {
+        cancelAnimationFrame(rafId);
+        rafId = null;
+      }
+      const audio = document.getElementById('sceneAudioPlayer');
+      if (audio && !audio.paused) {
+        audio.pause();
+      }
+      const ttsBtn = document.getElementById('ttsBtn');
+      if (ttsBtn) ttsBtn.textContent = '🔊 Ouvir Áudio Master (Sync v3)';
+      const img = document.getElementById('lia3dImg');
+      if (img && scenesData[currentScene]) {
+        img.src = scenesData[currentScene].defaultRig;
+      }
+    }
+
+    function updateRigFromAudioClock() {
+      const audio = document.getElementById('sceneAudioPlayer');
+      const img = document.getElementById('lia3dImg');
+      const data = scenesData[currentScene];
+      if (!audio || !img || !data || audio.paused || audio.ended) {
+        stopLipSync();
+        return;
+      }
+
+      const t = audio.currentTime;
+      const dur = (audio.duration && isFinite(audio.duration) && audio.duration > 0) ? audio.duration : 60.0;
+      const norm = Math.max(0, Math.min(0.9999, t / dur));
+      const frameIdx = Math.floor(t * 30);
+
+      // Atualiza timecode real sincronizado ao relógio de áudio (30 fps)
+      const mm = String(Math.floor(t / 60)).padStart(2, '0');
+      const ss = (t % 60).toFixed(2).padStart(5, '0');
+      const timeLabel = document.getElementById('timecodeLabel');
+      if (timeLabel) {
+        timeLabel.textContent = `${mm}:${ss} (f${frameIdx}) • 30 fps Sync v3`;
+      }
+
+      // Busca o estado fonético e corporal correspondente ao timestamp atual
+      let currentToken = currentTimeline[0] || { gesture: 'med_rest', viseme: 'rest' };
+      for (let i = 0; i < currentTimeline.length; i++) {
+        const tk = currentTimeline[i];
+        if (norm >= tk.startNorm && norm <= tk.endNorm) {
+          currentToken = tk;
+          break;
+        }
+      }
+
+      // Piscadas determinísticas baseadas no relógio de áudio (a cada ~3.8s e ~6.5s, duração 160ms)
+      const modBlink = t % 3.85;
+      const isBlinkFull = (modBlink >= 1.90 && modBlink <= 1.97);
+      const isBlinkHalf = (!isBlinkFull && modBlink >= 1.85 && modBlink <= 2.02);
+
+      const nextSrc = resolveRigV3Frame(
+        data.shotType,
+        currentToken.gesture,
+        currentToken.viseme,
+        isBlinkHalf,
+        isBlinkFull
+      );
+      if (!img.src.endsWith(nextSrc)) {
+        img.src = nextSrc;
+      }
+
+      rafId = requestAnimationFrame(updateRigFromAudioClock);
+    }
+
+    function toggleSpeech() {
+      const audio = document.getElementById('sceneAudioPlayer');
+      const data = scenesData[currentScene];
+      const ttsBtn = document.getElementById('ttsBtn');
+      if (!audio || !data) return;
+
+      if (isSpeaking && !audio.paused) {
+        stopLipSync();
+        return;
+      }
+
+      currentTimeline = buildNormalizedTimelinePTBR(data.narration, data.shotType);
+      audio.src = data.audioSrc;
+      audio.currentTime = 0;
+      isSpeaking = true;
+      if (ttsBtn) ttsBtn.textContent = '⏹️ Parar Áudio Master (Sync v3)';
+
+      audio.onended = () => stopLipSync();
+      audio.onerror = () => stopLipSync();
+
+      audio.play().then(() => {
+        rafId = requestAnimationFrame(updateRigFromAudioClock);
+      }).catch(err => {
+        console.warn('Falha ao reproduzir arquivo de mídia local:', err);
+        stopLipSync();
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,6414 @@
+{
+  "projectVersion": "3.1.0-nano-banana",
+  "characterName": "Lia — Instrutora Azure (AZ-104)",
+  "architecture": "100% Native Nano Banana (gemini-3.1-flash-image) Multi-Channel Facial & Body Rig",
+  "coordinateSystem": {
+    "width": 1024,
+    "height": 1024
+  },
+  "nanoBananaAssetsDir": "assets/nano_banana_v3/",
+  "exportedKeyframesDir": "assets/rig_v3/",
+  "independentChannels": {
+    "mouthVisemes": [
+      "REST",
+      "MBP",
+      "FV",
+      "OU_50",
+      "OU",
+      "EI_25",
+      "EI_50",
+      "EI",
+      "A_75",
+      "A",
+      "SMILE"
+    ],
+    "eyelidBlink": [
+      "OPEN",
+      "BLINK_HALF",
+      "BLINK_FULL"
+    ],
+    "bodyGestures": [
+      "REST",
+      "PREP",
+      "ENUM1",
+      "ENUM2",
+      "POINT_LEFT",
+      "PALM"
+    ]
+  },
+  "previewTimeline": {
+    "text": "Olá! Eu sou a Lia. Primeiro, vamos preparar nosso ambiente no Azure. Observe o exemplo à esquerda. A Bianca abriu o portal para verificar o grupo de recursos. Agora, vamos conferir as permissões. Muito bem! Antes de continuar, uma atenção importante: o orçamento envia avisos, mas não interrompe automaticamente o consumo. Vamos fazer essa configuração passo a passo?",
+    "voice": "pt-BR-FranciscaNeural",
+    "durationSec": 31.1191,
+    "totalFrames30fps": 934,
+    "words": [
+      {
+        "word": "Olá",
+        "segIndex": 0,
+        "rawOffsetSec": 0.6021,
+        "startSec": 0.645,
+        "endSec": 1.05,
+        "durationSec": 0.405,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 0.61,
+            "endSec": 0.805,
+            "meanRms": 4160,
+            "meanZcr": 0.049
+          },
+          {
+            "phoneme": "l",
+            "viseme": "EI_50",
+            "acType": "consonant",
+            "startSec": 0.805,
+            "endSec": 0.89,
+            "meanRms": 6480,
+            "meanZcr": 0.051
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 0.89,
+            "endSec": 1.05,
+            "meanRms": 4715,
+            "meanZcr": 0.079
+          }
+        ]
+      },
+      {
+        "word": "Eu",
+        "segIndex": 0,
+        "rawOffsetSec": 1.3333,
+        "startSec": 1.395,
+        "endSec": 1.43,
+        "durationSec": 0.035,
+        "phonemes": [
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 1.395,
+            "endSec": 1.41,
+            "meanRms": 312,
+            "meanZcr": 0.131
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 1.41,
+            "endSec": 1.43,
+            "meanRms": 3020,
+            "meanZcr": 0.044
+          }
+        ]
+      },
+      {
+        "word": "sou",
+        "segIndex": 0,
+        "rawOffsetSec": 1.4766,
+        "startSec": 1.43,
+        "endSec": 1.665,
+        "durationSec": 0.235,
+        "phonemes": [
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 1.43,
+            "endSec": 1.47,
+            "meanRms": 6564,
+            "meanZcr": 0.045
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 1.47,
+            "endSec": 1.665,
+            "meanRms": 2649,
+            "meanZcr": 0.438
+          }
+        ]
+      },
+      {
+        "word": "a",
+        "segIndex": 0,
+        "rawOffsetSec": 1.711,
+        "startSec": 1.665,
+        "endSec": 1.74,
+        "durationSec": 0.075,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 1.665,
+            "endSec": 1.74
+          }
+        ]
+      },
+      {
+        "word": "Lia",
+        "segIndex": 0,
+        "rawOffsetSec": 1.7891,
+        "startSec": 1.74,
+        "endSec": 2.17,
+        "durationSec": 0.43,
+        "phonemes": [
+          {
+            "phoneme": "l",
+            "viseme": "EI_50",
+            "acType": "consonant",
+            "startSec": 1.74,
+            "endSec": 1.835,
+            "meanRms": 7166,
+            "meanZcr": 0.069
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 1.835,
+            "endSec": 1.99,
+            "meanRms": 4619,
+            "meanZcr": 0.032
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 1.99,
+            "endSec": 2.17,
+            "meanRms": 3965,
+            "meanZcr": 0.039
+          }
+        ]
+      },
+      {
+        "word": "Primeiro",
+        "segIndex": 1,
+        "rawOffsetSec": 3.0704,
+        "startSec": 3.1,
+        "endSec": 3.565,
+        "durationSec": 0.465,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 3.065,
+            "endSec": 3.155,
+            "meanRms": 10,
+            "meanZcr": 0.058
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 3.155,
+            "endSec": 3.195,
+            "meanRms": 1434,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 3.195,
+            "endSec": 3.255,
+            "meanRms": 3999,
+            "meanZcr": 0.03
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 3.255,
+            "endSec": 3.31,
+            "meanRms": 3935,
+            "meanZcr": 0.018
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 3.31,
+            "endSec": 3.385,
+            "meanRms": 4201,
+            "meanZcr": 0.031
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 3.385,
+            "endSec": 3.455,
+            "meanRms": 4351,
+            "meanZcr": 0.066
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 3.455,
+            "endSec": 3.495,
+            "meanRms": 3670,
+            "meanZcr": 0.097
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 3.495,
+            "endSec": 3.565,
+            "meanRms": 2680,
+            "meanZcr": 0.038
+          }
+        ]
+      },
+      {
+        "word": "vamos",
+        "segIndex": 1,
+        "rawOffsetSec": 3.623,
+        "startSec": 3.575,
+        "endSec": 3.88,
+        "durationSec": 0.305,
+        "phonemes": [
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 3.575,
+            "endSec": 3.63,
+            "meanRms": 3552,
+            "meanZcr": 0.048
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 3.63,
+            "endSec": 3.69,
+            "meanRms": 1171,
+            "meanZcr": 0.027
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 3.69,
+            "endSec": 3.745,
+            "meanRms": 2119,
+            "meanZcr": 0.037
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 3.745,
+            "endSec": 3.84,
+            "meanRms": 5242,
+            "meanZcr": 0.046
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 3.84,
+            "endSec": 3.88,
+            "meanRms": 4667,
+            "meanZcr": 0.022
+          }
+        ]
+      },
+      {
+        "word": "preparar",
+        "segIndex": 1,
+        "rawOffsetSec": 3.9256,
+        "startSec": 3.88,
+        "endSec": 4.405,
+        "durationSec": 0.525,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 3.88,
+            "endSec": 3.935,
+            "meanRms": 2763,
+            "meanZcr": 0.325
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 3.935,
+            "endSec": 4.035,
+            "meanRms": 777,
+            "meanZcr": 0.439
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 4.035,
+            "endSec": 4.12,
+            "meanRms": 3461,
+            "meanZcr": 0.049
+          },
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 4.12,
+            "endSec": 4.205,
+            "meanRms": 378,
+            "meanZcr": 0.023
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 4.205,
+            "endSec": 4.265,
+            "meanRms": 5558,
+            "meanZcr": 0.077
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 4.265,
+            "endSec": 4.305,
+            "meanRms": 4547,
+            "meanZcr": 0.078
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 4.305,
+            "endSec": 4.365,
+            "meanRms": 3041,
+            "meanZcr": 0.067
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 4.365,
+            "endSec": 4.405,
+            "meanRms": 5120,
+            "meanZcr": 0.074
+          }
+        ]
+      },
+      {
+        "word": "nosso",
+        "segIndex": 1,
+        "rawOffsetSec": 4.452,
+        "startSec": 4.405,
+        "endSec": 4.745,
+        "durationSec": 0.34,
+        "phonemes": [
+          {
+            "phoneme": "n",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 4.405,
+            "endSec": 4.445,
+            "meanRms": 5564,
+            "meanZcr": 0.074
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 4.445,
+            "endSec": 4.575,
+            "meanRms": 3469,
+            "meanZcr": 0.027
+          },
+          {
+            "phoneme": "ʃ",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 4.575,
+            "endSec": 4.615,
+            "meanRms": 4025,
+            "meanZcr": 0.026
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 4.615,
+            "endSec": 4.745,
+            "meanRms": 3516,
+            "meanZcr": 0.225
+          }
+        ]
+      },
+      {
+        "word": "ambiente",
+        "segIndex": 1,
+        "rawOffsetSec": 4.7941,
+        "startSec": 4.745,
+        "endSec": 5.235,
+        "durationSec": 0.49,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 4.745,
+            "endSec": 4.915,
+            "meanRms": 3235,
+            "meanZcr": 0.244
+          },
+          {
+            "phoneme": "mb",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 4.915,
+            "endSec": 4.975,
+            "meanRms": 2163,
+            "meanZcr": 0.019
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 4.975,
+            "endSec": 5.035,
+            "meanRms": 3400,
+            "meanZcr": 0.031
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 5.035,
+            "endSec": 5.095,
+            "meanRms": 3611,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 5.095,
+            "endSec": 5.135,
+            "meanRms": 3311,
+            "meanZcr": 0.029
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 5.135,
+            "endSec": 5.235,
+            "meanRms": 3662,
+            "meanZcr": 0.067
+          }
+        ]
+      },
+      {
+        "word": "no",
+        "segIndex": 1,
+        "rawOffsetSec": 5.2809,
+        "startSec": 5.235,
+        "endSec": 5.365,
+        "durationSec": 0.13,
+        "phonemes": [
+          {
+            "phoneme": "n",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 5.235,
+            "endSec": 5.29,
+            "meanRms": 1181,
+            "meanZcr": 0.38
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 5.29,
+            "endSec": 5.365,
+            "meanRms": 3504,
+            "meanZcr": 0.023
+          }
+        ]
+      },
+      {
+        "word": "Azure",
+        "segIndex": 1,
+        "rawOffsetSec": 5.4125,
+        "startSec": 5.365,
+        "endSec": 5.815,
+        "durationSec": 0.45,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 5.365,
+            "endSec": 5.54,
+            "meanRms": 5114,
+            "meanZcr": 0.05
+          },
+          {
+            "phoneme": "z",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 5.54,
+            "endSec": 5.64,
+            "meanRms": 1423,
+            "meanZcr": 0.461
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 5.64,
+            "endSec": 5.7,
+            "meanRms": 3312,
+            "meanZcr": 0.122
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 5.7,
+            "endSec": 5.74,
+            "meanRms": 4595,
+            "meanZcr": 0.036
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 5.74,
+            "endSec": 5.815,
+            "meanRms": 3993,
+            "meanZcr": 0.037
+          }
+        ]
+      },
+      {
+        "word": "Observe",
+        "segIndex": 2,
+        "rawOffsetSec": 6.873,
+        "startSec": 6.945,
+        "endSec": 7.505,
+        "durationSec": 0.56,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 6.91,
+            "endSec": 7.035,
+            "meanRms": 5657,
+            "meanZcr": 0.049
+          },
+          {
+            "phoneme": "b",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 7.035,
+            "endSec": 7.09,
+            "meanRms": 2695,
+            "meanZcr": 0.025
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 7.09,
+            "endSec": 7.13,
+            "meanRms": 2665,
+            "meanZcr": 0.021
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 7.13,
+            "endSec": 7.18,
+            "meanRms": 3434,
+            "meanZcr": 0.207
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 7.18,
+            "endSec": 7.24,
+            "meanRms": 1947,
+            "meanZcr": 0.734
+          },
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 7.24,
+            "endSec": 7.325,
+            "meanRms": 1676,
+            "meanZcr": 0.6
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 7.325,
+            "endSec": 7.505,
+            "meanRms": 4739,
+            "meanZcr": 0.061
+          }
+        ]
+      },
+      {
+        "word": "o",
+        "segIndex": 2,
+        "rawOffsetSec": 7.5511,
+        "startSec": 7.505,
+        "endSec": 7.585,
+        "durationSec": 0.08,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 7.505,
+            "endSec": 7.585
+          }
+        ]
+      },
+      {
+        "word": "exemplo",
+        "segIndex": 2,
+        "rawOffsetSec": 7.6309,
+        "startSec": 7.585,
+        "endSec": 8.06,
+        "durationSec": 0.475,
+        "phonemes": [
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 7.585,
+            "endSec": 7.755,
+            "meanRms": 4845,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "x",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 7.755,
+            "endSec": 7.85,
+            "meanRms": 1520,
+            "meanZcr": 0.564
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 7.85,
+            "endSec": 7.9,
+            "meanRms": 4950,
+            "meanZcr": 0.063
+          },
+          {
+            "phoneme": "mp",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 7.9,
+            "endSec": 7.96,
+            "meanRms": 4831,
+            "meanZcr": 0.081
+          },
+          {
+            "phoneme": "l",
+            "viseme": "EI_50",
+            "acType": "consonant",
+            "startSec": 7.96,
+            "endSec": 8,
+            "meanRms": 4647,
+            "meanZcr": 0.049
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 8,
+            "endSec": 8.06,
+            "meanRms": 2221,
+            "meanZcr": 0.019
+          }
+        ]
+      },
+      {
+        "word": "à",
+        "segIndex": 2,
+        "rawOffsetSec": 8.1096,
+        "startSec": 8.06,
+        "endSec": 8.13,
+        "durationSec": 0.07,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 8.06,
+            "endSec": 8.13
+          }
+        ]
+      },
+      {
+        "word": "esquerda",
+        "segIndex": 2,
+        "rawOffsetSec": 8.1761,
+        "startSec": 8.13,
+        "endSec": 8.78,
+        "durationSec": 0.65,
+        "phonemes": [
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 8.13,
+            "endSec": 8.27,
+            "meanRms": 5391,
+            "meanZcr": 0.068
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 8.27,
+            "endSec": 8.385,
+            "meanRms": 1476,
+            "meanZcr": 0.658
+          },
+          {
+            "phoneme": "k",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 8.385,
+            "endSec": 8.46,
+            "meanRms": 221,
+            "meanZcr": 0.311
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 8.46,
+            "endSec": 8.605,
+            "meanRms": 4555,
+            "meanZcr": 0.05
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 8.605,
+            "endSec": 8.66,
+            "meanRms": 1121,
+            "meanZcr": 0.032
+          },
+          {
+            "phoneme": "d",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 8.66,
+            "endSec": 8.72,
+            "meanRms": 642,
+            "meanZcr": 0.014
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 8.72,
+            "endSec": 8.78,
+            "meanRms": 2321,
+            "meanZcr": 0.044
+          }
+        ]
+      },
+      {
+        "word": "A",
+        "segIndex": 3,
+        "rawOffsetSec": 9.7804,
+        "startSec": 9.83,
+        "endSec": 9.865,
+        "durationSec": 0.035,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 9.83,
+            "endSec": 9.865
+          }
+        ]
+      },
+      {
+        "word": "Bianca",
+        "segIndex": 3,
+        "rawOffsetSec": 9.912,
+        "startSec": 9.865,
+        "endSec": 10.365,
+        "durationSec": 0.5,
+        "phonemes": [
+          {
+            "phoneme": "b",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 9.865,
+            "endSec": 9.92,
+            "meanRms": 6005,
+            "meanZcr": 0.085
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 9.92,
+            "endSec": 10.005,
+            "meanRms": 2522,
+            "meanZcr": 0.029
+          },
+          {
+            "phoneme": "ɐ̃",
+            "viseme": "A_75",
+            "acType": "vowel",
+            "startSec": 10.005,
+            "endSec": 10.1,
+            "meanRms": 3163,
+            "meanZcr": 0.026
+          },
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 10.1,
+            "endSec": 10.14,
+            "meanRms": 3746,
+            "meanZcr": 0.042
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 10.14,
+            "endSec": 10.365,
+            "meanRms": 5472,
+            "meanZcr": 0.049
+          }
+        ]
+      },
+      {
+        "word": "abriu",
+        "segIndex": 3,
+        "rawOffsetSec": 10.412,
+        "startSec": 10.365,
+        "endSec": 10.63,
+        "durationSec": 0.265,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 10.365,
+            "endSec": 10.44,
+            "meanRms": 2148,
+            "meanZcr": 0.104
+          },
+          {
+            "phoneme": "b",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 10.44,
+            "endSec": 10.49,
+            "meanRms": 6233,
+            "meanZcr": 0.061
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 10.49,
+            "endSec": 10.53,
+            "meanRms": 2471,
+            "meanZcr": 0.026
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 10.53,
+            "endSec": 10.58,
+            "meanRms": 1414,
+            "meanZcr": 0.015
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 10.58,
+            "endSec": 10.63,
+            "meanRms": 2637,
+            "meanZcr": 0.028
+          }
+        ]
+      },
+      {
+        "word": "o",
+        "segIndex": 3,
+        "rawOffsetSec": 10.6751,
+        "startSec": 10.63,
+        "endSec": 10.68,
+        "durationSec": 0.05,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 10.63,
+            "endSec": 10.68
+          }
+        ]
+      },
+      {
+        "word": "portal",
+        "segIndex": 3,
+        "rawOffsetSec": 10.7278,
+        "startSec": 10.68,
+        "endSec": 11.18,
+        "durationSec": 0.5,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 10.68,
+            "endSec": 10.805,
+            "meanRms": 2435,
+            "meanZcr": 0.027
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 10.805,
+            "endSec": 10.91,
+            "meanRms": 3804,
+            "meanZcr": 0.048
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 10.91,
+            "endSec": 10.975,
+            "meanRms": 1196,
+            "meanZcr": 0.028
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 10.975,
+            "endSec": 11.05,
+            "meanRms": 247,
+            "meanZcr": 0.041
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 11.05,
+            "endSec": 11.125,
+            "meanRms": 6271,
+            "meanZcr": 0.072
+          },
+          {
+            "phoneme": "w",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 11.125,
+            "endSec": 11.18,
+            "meanRms": 7787,
+            "meanZcr": 0.078
+          }
+        ]
+      },
+      {
+        "word": "para",
+        "segIndex": 3,
+        "rawOffsetSec": 11.2278,
+        "startSec": 11.18,
+        "endSec": 11.38,
+        "durationSec": 0.2,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 11.18,
+            "endSec": 11.23,
+            "meanRms": 5814,
+            "meanZcr": 0.063
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 11.23,
+            "endSec": 11.28,
+            "meanRms": 963,
+            "meanZcr": 0.036
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 11.28,
+            "endSec": 11.325,
+            "meanRms": 121,
+            "meanZcr": 0.007
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 11.325,
+            "endSec": 11.38,
+            "meanRms": 4905,
+            "meanZcr": 0.053
+          }
+        ]
+      },
+      {
+        "word": "verificar",
+        "segIndex": 3,
+        "rawOffsetSec": 11.4251,
+        "startSec": 11.38,
+        "endSec": 11.955,
+        "durationSec": 0.575,
+        "phonemes": [
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 11.38,
+            "endSec": 11.435,
+            "meanRms": 4740,
+            "meanZcr": 0.076
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 11.435,
+            "endSec": 11.485,
+            "meanRms": 3140,
+            "meanZcr": 0.043
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 11.485,
+            "endSec": 11.525,
+            "meanRms": 1035,
+            "meanZcr": 0.031
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 11.525,
+            "endSec": 11.645,
+            "meanRms": 4614,
+            "meanZcr": 0.035
+          },
+          {
+            "phoneme": "f",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 11.645,
+            "endSec": 11.75,
+            "meanRms": 477,
+            "meanZcr": 0.315
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 11.75,
+            "endSec": 11.8,
+            "meanRms": 2623,
+            "meanZcr": 0.047
+          },
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 11.8,
+            "endSec": 11.855,
+            "meanRms": 143,
+            "meanZcr": 0.024
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 11.855,
+            "endSec": 11.915,
+            "meanRms": 1780,
+            "meanZcr": 0.101
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 11.915,
+            "endSec": 11.955,
+            "meanRms": 6054,
+            "meanZcr": 0.071
+          }
+        ]
+      },
+      {
+        "word": "o",
+        "segIndex": 3,
+        "rawOffsetSec": 12.0041,
+        "startSec": 11.955,
+        "endSec": 12.02,
+        "durationSec": 0.065,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 11.955,
+            "endSec": 12.02
+          }
+        ]
+      },
+      {
+        "word": "grupo",
+        "segIndex": 3,
+        "rawOffsetSec": 12.0699,
+        "startSec": 12.02,
+        "endSec": 12.365,
+        "durationSec": 0.345,
+        "phonemes": [
+          {
+            "phoneme": "g",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 12.02,
+            "endSec": 12.06,
+            "meanRms": 3660,
+            "meanZcr": 0.04
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 12.06,
+            "endSec": 12.1,
+            "meanRms": 2406,
+            "meanZcr": 0.027
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 12.1,
+            "endSec": 12.16,
+            "meanRms": 1037,
+            "meanZcr": 0.014
+          },
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 12.16,
+            "endSec": 12.225,
+            "meanRms": 2080,
+            "meanZcr": 0.023
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 12.225,
+            "endSec": 12.365,
+            "meanRms": 2874,
+            "meanZcr": 0.028
+          }
+        ]
+      },
+      {
+        "word": "de",
+        "segIndex": 3,
+        "rawOffsetSec": 12.412,
+        "startSec": 12.365,
+        "endSec": 12.47,
+        "durationSec": 0.105,
+        "phonemes": [
+          {
+            "phoneme": "d",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 12.365,
+            "endSec": 12.41,
+            "meanRms": 426,
+            "meanZcr": 0.053
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 12.41,
+            "endSec": 12.47,
+            "meanRms": 3616,
+            "meanZcr": 0.029
+          }
+        ]
+      },
+      {
+        "word": "recursos",
+        "segIndex": 3,
+        "rawOffsetSec": 12.5172,
+        "startSec": 12.47,
+        "endSec": 13.26,
+        "durationSec": 0.79,
+        "phonemes": [
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 12.47,
+            "endSec": 12.525,
+            "meanRms": 1412,
+            "meanZcr": 0.289
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 12.525,
+            "endSec": 12.69,
+            "meanRms": 4050,
+            "meanZcr": 0.032
+          },
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 12.69,
+            "endSec": 12.8,
+            "meanRms": 224,
+            "meanZcr": 0.052
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 12.8,
+            "endSec": 12.935,
+            "meanRms": 4221,
+            "meanZcr": 0.033
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 12.935,
+            "endSec": 13.015,
+            "meanRms": 1291,
+            "meanZcr": 0.349
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 13.015,
+            "endSec": 13.1,
+            "meanRms": 1699,
+            "meanZcr": 0.605
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 13.1,
+            "endSec": 13.16,
+            "meanRms": 1324,
+            "meanZcr": 0.233
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 13.16,
+            "endSec": 13.26,
+            "meanRms": 1603,
+            "meanZcr": 0.697
+          }
+        ]
+      },
+      {
+        "word": "Agora",
+        "segIndex": 4,
+        "rawOffsetSec": 14.2173,
+        "startSec": 14.275,
+        "endSec": 14.685,
+        "durationSec": 0.41,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 14.275,
+            "endSec": 14.38,
+            "meanRms": 3125,
+            "meanZcr": 0.072
+          },
+          {
+            "phoneme": "g",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 14.38,
+            "endSec": 14.465,
+            "meanRms": 866,
+            "meanZcr": 0.023
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 14.465,
+            "endSec": 14.575,
+            "meanRms": 7119,
+            "meanZcr": 0.056
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 14.575,
+            "endSec": 14.615,
+            "meanRms": 6695,
+            "meanZcr": 0.071
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 14.615,
+            "endSec": 14.685,
+            "meanRms": 3662,
+            "meanZcr": 0.061
+          }
+        ]
+      },
+      {
+        "word": "vamos",
+        "segIndex": 4,
+        "rawOffsetSec": 14.7963,
+        "startSec": 14.75,
+        "endSec": 15.04,
+        "durationSec": 0.29,
+        "phonemes": [
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 14.75,
+            "endSec": 14.805,
+            "meanRms": 231,
+            "meanZcr": 0.015
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 14.805,
+            "endSec": 14.86,
+            "meanRms": 85,
+            "meanZcr": 0.101
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 14.86,
+            "endSec": 14.915,
+            "meanRms": 1533,
+            "meanZcr": 0.073
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 14.915,
+            "endSec": 15,
+            "meanRms": 5268,
+            "meanZcr": 0.038
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 15,
+            "endSec": 15.04,
+            "meanRms": 5239,
+            "meanZcr": 0.02
+          }
+        ]
+      },
+      {
+        "word": "conferir",
+        "segIndex": 4,
+        "rawOffsetSec": 15.0858,
+        "startSec": 15.04,
+        "endSec": 15.54,
+        "durationSec": 0.5,
+        "phonemes": [
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 15.04,
+            "endSec": 15.08,
+            "meanRms": 3172,
+            "meanZcr": 0.183
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 15.08,
+            "endSec": 15.14,
+            "meanRms": 1769,
+            "meanZcr": 0.65
+          },
+          {
+            "phoneme": "f",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 15.14,
+            "endSec": 15.21,
+            "meanRms": 473,
+            "meanZcr": 0.242
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 15.21,
+            "endSec": 15.295,
+            "meanRms": 4979,
+            "meanZcr": 0.041
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 15.295,
+            "endSec": 15.375,
+            "meanRms": 445,
+            "meanZcr": 0.308
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 15.375,
+            "endSec": 15.46,
+            "meanRms": 6048,
+            "meanZcr": 0.055
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 15.46,
+            "endSec": 15.54,
+            "meanRms": 2208,
+            "meanZcr": 0.023
+          }
+        ]
+      },
+      {
+        "word": "as",
+        "segIndex": 4,
+        "rawOffsetSec": 15.5858,
+        "startSec": 15.54,
+        "endSec": 15.67,
+        "durationSec": 0.13,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 15.54,
+            "endSec": 15.63,
+            "meanRms": 3459,
+            "meanZcr": 0.048
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 15.63,
+            "endSec": 15.67,
+            "meanRms": 4552,
+            "meanZcr": 0.079
+          }
+        ]
+      },
+      {
+        "word": "permissões",
+        "segIndex": 4,
+        "rawOffsetSec": 15.7173,
+        "startSec": 15.67,
+        "endSec": 16.565,
+        "durationSec": 0.895,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 15.67,
+            "endSec": 15.725,
+            "meanRms": 2346,
+            "meanZcr": 0.428
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 15.725,
+            "endSec": 15.775,
+            "meanRms": 1695,
+            "meanZcr": 0.671
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 15.775,
+            "endSec": 15.815,
+            "meanRms": 222,
+            "meanZcr": 0.359
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 15.815,
+            "endSec": 15.87,
+            "meanRms": 2945,
+            "meanZcr": 0.067
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 15.87,
+            "endSec": 16.09,
+            "meanRms": 4948,
+            "meanZcr": 0.09
+          },
+          {
+            "phoneme": "ʃ",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 16.09,
+            "endSec": 16.22,
+            "meanRms": 2100,
+            "meanZcr": 0.673
+          },
+          {
+            "phoneme": "õ",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 16.22,
+            "endSec": 16.35,
+            "meanRms": 3827,
+            "meanZcr": 0.063
+          },
+          {
+            "phoneme": "j̃",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 16.35,
+            "endSec": 16.435,
+            "meanRms": 1806,
+            "meanZcr": 0.038
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 16.435,
+            "endSec": 16.565,
+            "meanRms": 1365,
+            "meanZcr": 0.664
+          }
+        ]
+      },
+      {
+        "word": "Muito",
+        "segIndex": 4,
+        "rawOffsetSec": 16.8522,
+        "startSec": 16.86,
+        "endSec": 17.215,
+        "durationSec": 0.355,
+        "phonemes": [
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 16.825,
+            "endSec": 16.935,
+            "meanRms": 173,
+            "meanZcr": 0.269
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 16.935,
+            "endSec": 17.03,
+            "meanRms": 4150,
+            "meanZcr": 0.017
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 17.03,
+            "endSec": 17.115,
+            "meanRms": 5923,
+            "meanZcr": 0.02
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 17.115,
+            "endSec": 17.155,
+            "meanRms": 5572,
+            "meanZcr": 0.024
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 17.155,
+            "endSec": 17.215,
+            "meanRms": 295,
+            "meanZcr": 0.065
+          }
+        ]
+      },
+      {
+        "word": "bem",
+        "segIndex": 4,
+        "rawOffsetSec": 17.2601,
+        "startSec": 17.215,
+        "endSec": 17.57,
+        "durationSec": 0.355,
+        "phonemes": [
+          {
+            "phoneme": "b",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 17.215,
+            "endSec": 17.32,
+            "meanRms": 3312,
+            "meanZcr": 0.045
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 17.32,
+            "endSec": 17.49,
+            "meanRms": 3947,
+            "meanZcr": 0.048
+          },
+          {
+            "phoneme": "m_coda",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 17.49,
+            "endSec": 17.57,
+            "meanRms": 1839,
+            "meanZcr": 0.04
+          }
+        ]
+      },
+      {
+        "word": "Antes",
+        "segIndex": 5,
+        "rawOffsetSec": 18.7247,
+        "startSec": 18.79,
+        "endSec": 19.075,
+        "durationSec": 0.285,
+        "phonemes": [
+          {
+            "phoneme": "ɐ̃",
+            "viseme": "A_75",
+            "acType": "vowel",
+            "startSec": 18.79,
+            "endSec": 18.91,
+            "meanRms": 4945,
+            "meanZcr": 0.064
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 18.91,
+            "endSec": 18.95,
+            "meanRms": 4728,
+            "meanZcr": 0.06
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 18.95,
+            "endSec": 19,
+            "meanRms": 2476,
+            "meanZcr": 0.028
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 19,
+            "endSec": 19.075,
+            "meanRms": 1097,
+            "meanZcr": 0.35
+          }
+        ]
+      },
+      {
+        "word": "de",
+        "segIndex": 5,
+        "rawOffsetSec": 19.1237,
+        "startSec": 19.075,
+        "endSec": 19.185,
+        "durationSec": 0.11,
+        "phonemes": [
+          {
+            "phoneme": "d",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 19.075,
+            "endSec": 19.115,
+            "meanRms": 5309,
+            "meanZcr": 0.027
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 19.115,
+            "endSec": 19.185,
+            "meanRms": 3169,
+            "meanZcr": 0.263
+          }
+        ]
+      },
+      {
+        "word": "continuar",
+        "segIndex": 5,
+        "rawOffsetSec": 19.23,
+        "startSec": 19.185,
+        "endSec": 19.85,
+        "durationSec": 0.665,
+        "phonemes": [
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 19.185,
+            "endSec": 19.225,
+            "meanRms": 2582,
+            "meanZcr": 0.305
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 19.225,
+            "endSec": 19.285,
+            "meanRms": 2576,
+            "meanZcr": 0.053
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 19.285,
+            "endSec": 19.34,
+            "meanRms": 399,
+            "meanZcr": 0.055
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 19.34,
+            "endSec": 19.435,
+            "meanRms": 4436,
+            "meanZcr": 0.028
+          },
+          {
+            "phoneme": "n",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 19.435,
+            "endSec": 19.515,
+            "meanRms": 1077,
+            "meanZcr": 0.323
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 19.515,
+            "endSec": 19.66,
+            "meanRms": 3257,
+            "meanZcr": 0.026
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 19.66,
+            "endSec": 19.81,
+            "meanRms": 5473,
+            "meanZcr": 0.075
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 19.81,
+            "endSec": 19.85,
+            "meanRms": 5054,
+            "meanZcr": 0.069
+          }
+        ]
+      },
+      {
+        "word": "uma",
+        "segIndex": 5,
+        "rawOffsetSec": 20.1476,
+        "startSec": 20.165,
+        "endSec": 20.285,
+        "durationSec": 0.12,
+        "phonemes": [
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 20.13,
+            "endSec": 20.205,
+            "meanRms": 1803,
+            "meanZcr": 0.034
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 20.205,
+            "endSec": 20.245,
+            "meanRms": 6719,
+            "meanZcr": 0.019
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 20.245,
+            "endSec": 20.285,
+            "meanRms": 6597,
+            "meanZcr": 0.019
+          }
+        ]
+      },
+      {
+        "word": "atenção",
+        "segIndex": 5,
+        "rawOffsetSec": 20.3338,
+        "startSec": 20.285,
+        "endSec": 20.765,
+        "durationSec": 0.48,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 20.285,
+            "endSec": 20.41,
+            "meanRms": 5973,
+            "meanZcr": 0.054
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 20.41,
+            "endSec": 20.495,
+            "meanRms": 289,
+            "meanZcr": 0.05
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 20.495,
+            "endSec": 20.6,
+            "meanRms": 3515,
+            "meanZcr": 0.026
+          },
+          {
+            "phoneme": "ç",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 20.6,
+            "endSec": 20.655,
+            "meanRms": 1378,
+            "meanZcr": 0.521
+          },
+          {
+            "phoneme": "ɐ̃",
+            "viseme": "A_75",
+            "acType": "vowel",
+            "startSec": 20.655,
+            "endSec": 20.71,
+            "meanRms": 1608,
+            "meanZcr": 0.756
+          },
+          {
+            "phoneme": "w̃",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 20.71,
+            "endSec": 20.765,
+            "meanRms": 3474,
+            "meanZcr": 0.248
+          }
+        ]
+      },
+      {
+        "word": "importante",
+        "segIndex": 5,
+        "rawOffsetSec": 20.8125,
+        "startSec": 20.765,
+        "endSec": 21.55,
+        "durationSec": 0.785,
+        "phonemes": [
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 20.765,
+            "endSec": 20.92,
+            "meanRms": 6012,
+            "meanZcr": 0.027
+          },
+          {
+            "phoneme": "mp",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 20.92,
+            "endSec": 21,
+            "meanRms": 542,
+            "meanZcr": 0.04
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 21,
+            "endSec": 21.1,
+            "meanRms": 5546,
+            "meanZcr": 0.047
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 21.1,
+            "endSec": 21.145,
+            "meanRms": 385,
+            "meanZcr": 0.014
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 21.145,
+            "endSec": 21.205,
+            "meanRms": 206,
+            "meanZcr": 0.056
+          },
+          {
+            "phoneme": "ɐ̃",
+            "viseme": "A_75",
+            "acType": "vowel",
+            "startSec": 21.205,
+            "endSec": 21.395,
+            "meanRms": 4218,
+            "meanZcr": 0.049
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 21.395,
+            "endSec": 21.48,
+            "meanRms": 919,
+            "meanZcr": 0.21
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 21.48,
+            "endSec": 21.55,
+            "meanRms": 1431,
+            "meanZcr": 0.461
+          }
+        ]
+      },
+      {
+        "word": "o",
+        "segIndex": 5,
+        "rawOffsetSec": 21.7832,
+        "startSec": 21.7382,
+        "endSec": 21.8131,
+        "durationSec": 0.0749,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 21.7032,
+            "endSec": 21.8131
+          }
+        ]
+      },
+      {
+        "word": "orçamento",
+        "segIndex": 5,
+        "rawOffsetSec": 21.8364,
+        "startSec": 21.815,
+        "endSec": 22.4,
+        "durationSec": 0.585,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 21.815,
+            "endSec": 21.995,
+            "meanRms": 5590,
+            "meanZcr": 0.036
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 21.995,
+            "endSec": 22.055,
+            "meanRms": 2365,
+            "meanZcr": 0.327
+          },
+          {
+            "phoneme": "ç",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 22.055,
+            "endSec": 22.12,
+            "meanRms": 1621,
+            "meanZcr": 0.677
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 22.12,
+            "endSec": 22.18,
+            "meanRms": 5184,
+            "meanZcr": 0.07
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 22.18,
+            "endSec": 22.235,
+            "meanRms": 4311,
+            "meanZcr": 0.019
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 22.235,
+            "endSec": 22.285,
+            "meanRms": 4547,
+            "meanZcr": 0.02
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 22.285,
+            "endSec": 22.325,
+            "meanRms": 4760,
+            "meanZcr": 0.038
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 22.325,
+            "endSec": 22.4,
+            "meanRms": 4975,
+            "meanZcr": 0.027
+          }
+        ]
+      },
+      {
+        "word": "envia",
+        "segIndex": 5,
+        "rawOffsetSec": 22.4481,
+        "startSec": 22.4,
+        "endSec": 22.695,
+        "durationSec": 0.295,
+        "phonemes": [
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 22.4,
+            "endSec": 22.45,
+            "meanRms": 371,
+            "meanZcr": 0.075
+          },
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 22.45,
+            "endSec": 22.505,
+            "meanRms": 3822,
+            "meanZcr": 0.065
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 22.505,
+            "endSec": 22.595,
+            "meanRms": 6434,
+            "meanZcr": 0.022
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 22.595,
+            "endSec": 22.695,
+            "meanRms": 1948,
+            "meanZcr": 0.053
+          }
+        ]
+      },
+      {
+        "word": "avisos",
+        "segIndex": 5,
+        "rawOffsetSec": 22.7407,
+        "startSec": 22.695,
+        "endSec": 23.305,
+        "durationSec": 0.61,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 22.695,
+            "endSec": 22.825,
+            "meanRms": 5163,
+            "meanZcr": 0.06
+          },
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 22.825,
+            "endSec": 22.93,
+            "meanRms": 960,
+            "meanZcr": 0.06
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 22.93,
+            "endSec": 23.07,
+            "meanRms": 3523,
+            "meanZcr": 0.026
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 23.07,
+            "endSec": 23.16,
+            "meanRms": 1923,
+            "meanZcr": 0.429
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 23.16,
+            "endSec": 23.225,
+            "meanRms": 2658,
+            "meanZcr": 0.067
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 23.225,
+            "endSec": 23.305,
+            "meanRms": 2088,
+            "meanZcr": 0.561
+          }
+        ]
+      },
+      {
+        "word": "mas",
+        "segIndex": 5,
+        "rawOffsetSec": 23.5785,
+        "startSec": 23.57,
+        "endSec": 23.73,
+        "durationSec": 0.16,
+        "phonemes": [
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 23.535,
+            "endSec": 23.64,
+            "meanRms": 184,
+            "meanZcr": 0.254
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 23.64,
+            "endSec": 23.69,
+            "meanRms": 3893,
+            "meanZcr": 0.033
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 23.69,
+            "endSec": 23.73,
+            "meanRms": 5983,
+            "meanZcr": 0.061
+          }
+        ]
+      },
+      {
+        "word": "não",
+        "segIndex": 5,
+        "rawOffsetSec": 23.7779,
+        "startSec": 23.73,
+        "endSec": 23.93,
+        "durationSec": 0.2,
+        "phonemes": [
+          {
+            "phoneme": "n",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 23.73,
+            "endSec": 23.82,
+            "meanRms": 2861,
+            "meanZcr": 0.332
+          },
+          {
+            "phoneme": "ɐ̃",
+            "viseme": "A_75",
+            "acType": "vowel",
+            "startSec": 23.82,
+            "endSec": 23.875,
+            "meanRms": 2310,
+            "meanZcr": 0.144
+          },
+          {
+            "phoneme": "w̃",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 23.875,
+            "endSec": 23.93,
+            "meanRms": 5223,
+            "meanZcr": 0.036
+          }
+        ]
+      },
+      {
+        "word": "interrompe",
+        "segIndex": 5,
+        "rawOffsetSec": 23.9774,
+        "startSec": 23.93,
+        "endSec": 24.54,
+        "durationSec": 0.61,
+        "phonemes": [
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 23.93,
+            "endSec": 24.09,
+            "meanRms": 5711,
+            "meanZcr": 0.03
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 24.09,
+            "endSec": 24.165,
+            "meanRms": 257,
+            "meanZcr": 0.039
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 24.165,
+            "endSec": 24.27,
+            "meanRms": 4022,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "ʁ",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 24.27,
+            "endSec": 24.325,
+            "meanRms": 1531,
+            "meanZcr": 0.021
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 24.325,
+            "endSec": 24.425,
+            "meanRms": 3955,
+            "meanZcr": 0.032
+          },
+          {
+            "phoneme": "mp",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 24.425,
+            "endSec": 24.485,
+            "meanRms": 4433,
+            "meanZcr": 0.041
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 24.485,
+            "endSec": 24.54,
+            "meanRms": 2337,
+            "meanZcr": 0.02
+          }
+        ]
+      },
+      {
+        "word": "automaticamente",
+        "segIndex": 5,
+        "rawOffsetSec": 24.5891,
+        "startSec": 24.54,
+        "endSec": 25.5,
+        "durationSec": 0.96,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 24.54,
+            "endSec": 24.635,
+            "meanRms": 1772,
+            "meanZcr": 0.041
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 24.635,
+            "endSec": 24.725,
+            "meanRms": 4403,
+            "meanZcr": 0.057
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 24.725,
+            "endSec": 24.795,
+            "meanRms": 238,
+            "meanZcr": 0.007
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 24.795,
+            "endSec": 24.855,
+            "meanRms": 3788,
+            "meanZcr": 0.052
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 24.855,
+            "endSec": 24.91,
+            "meanRms": 4180,
+            "meanZcr": 0.017
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 24.91,
+            "endSec": 25.005,
+            "meanRms": 4492,
+            "meanZcr": 0.05
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 25.005,
+            "endSec": 25.07,
+            "meanRms": 371,
+            "meanZcr": 0.226
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 25.07,
+            "endSec": 25.12,
+            "meanRms": 1169,
+            "meanZcr": 0.393
+          },
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 25.12,
+            "endSec": 25.2,
+            "meanRms": 405,
+            "meanZcr": 0.08
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 25.2,
+            "endSec": 25.27,
+            "meanRms": 5092,
+            "meanZcr": 0.061
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 25.27,
+            "endSec": 25.325,
+            "meanRms": 4068,
+            "meanZcr": 0.022
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 25.325,
+            "endSec": 25.385,
+            "meanRms": 3941,
+            "meanZcr": 0.024
+          },
+          {
+            "phoneme": "t",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 25.385,
+            "endSec": 25.425,
+            "meanRms": 3378,
+            "meanZcr": 0.021
+          },
+          {
+            "phoneme": "ɪ",
+            "viseme": "EI_50",
+            "acType": "vowel",
+            "startSec": 25.425,
+            "endSec": 25.5,
+            "meanRms": 3304,
+            "meanZcr": 0.019
+          }
+        ]
+      },
+      {
+        "word": "o",
+        "segIndex": 5,
+        "rawOffsetSec": 25.5465,
+        "startSec": 25.5,
+        "endSec": 25.54,
+        "durationSec": 0.04,
+        "phonemes": [
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 25.5,
+            "endSec": 25.54
+          }
+        ]
+      },
+      {
+        "word": "consumo",
+        "segIndex": 5,
+        "rawOffsetSec": 25.5864,
+        "startSec": 25.54,
+        "endSec": 26.175,
+        "durationSec": 0.635,
+        "phonemes": [
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 25.54,
+            "endSec": 25.65,
+            "meanRms": 1944,
+            "meanZcr": 0.119
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 25.65,
+            "endSec": 25.81,
+            "meanRms": 4058,
+            "meanZcr": 0.054
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 25.81,
+            "endSec": 25.94,
+            "meanRms": 1840,
+            "meanZcr": 0.624
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 25.94,
+            "endSec": 26.05,
+            "meanRms": 4330,
+            "meanZcr": 0.045
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 26.05,
+            "endSec": 26.105,
+            "meanRms": 2585,
+            "meanZcr": 0.014
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 26.105,
+            "endSec": 26.175,
+            "meanRms": 2020,
+            "meanZcr": 0.017
+          }
+        ]
+      },
+      {
+        "word": "Vamos",
+        "segIndex": 6,
+        "rawOffsetSec": 27.1833,
+        "startSec": 27.185,
+        "endSec": 27.48,
+        "durationSec": 0.295,
+        "phonemes": [
+          {
+            "phoneme": "v",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 27.15,
+            "endSec": 27.24,
+            "meanRms": 5,
+            "meanZcr": 0.386
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 27.24,
+            "endSec": 27.295,
+            "meanRms": 929,
+            "meanZcr": 0.018
+          },
+          {
+            "phoneme": "m",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 27.295,
+            "endSec": 27.35,
+            "meanRms": 4135,
+            "meanZcr": 0.049
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 27.35,
+            "endSec": 27.44,
+            "meanRms": 5011,
+            "meanZcr": 0.05
+          },
+          {
+            "phoneme": "s",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 27.44,
+            "endSec": 27.48,
+            "meanRms": 3573,
+            "meanZcr": 0.041
+          }
+        ]
+      },
+      {
+        "word": "fazer",
+        "segIndex": 6,
+        "rawOffsetSec": 27.5255,
+        "startSec": 27.48,
+        "endSec": 27.835,
+        "durationSec": 0.355,
+        "phonemes": [
+          {
+            "phoneme": "f",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 27.48,
+            "endSec": 27.535,
+            "meanRms": 2460,
+            "meanZcr": 0.368
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 27.535,
+            "endSec": 27.595,
+            "meanRms": 2251,
+            "meanZcr": 0.678
+          },
+          {
+            "phoneme": "z",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 27.595,
+            "endSec": 27.635,
+            "meanRms": 463,
+            "meanZcr": 0.261
+          },
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 27.635,
+            "endSec": 27.735,
+            "meanRms": 5389,
+            "meanZcr": 0.067
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 27.735,
+            "endSec": 27.835,
+            "meanRms": 1571,
+            "meanZcr": 0.465
+          }
+        ]
+      },
+      {
+        "word": "essa",
+        "segIndex": 6,
+        "rawOffsetSec": 27.8807,
+        "startSec": 27.835,
+        "endSec": 28.055,
+        "durationSec": 0.22,
+        "phonemes": [
+          {
+            "phoneme": "e",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 27.835,
+            "endSec": 27.9,
+            "meanRms": 6278,
+            "meanZcr": 0.045
+          },
+          {
+            "phoneme": "ʃ",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 27.9,
+            "endSec": 27.94,
+            "meanRms": 2757,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 27.94,
+            "endSec": 28.055,
+            "meanRms": 2486,
+            "meanZcr": 0.441
+          }
+        ]
+      },
+      {
+        "word": "configuração",
+        "segIndex": 6,
+        "rawOffsetSec": 28.1044,
+        "startSec": 28.055,
+        "endSec": 28.875,
+        "durationSec": 0.82,
+        "phonemes": [
+          {
+            "phoneme": "c",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 28.055,
+            "endSec": 28.095,
+            "meanRms": 1061,
+            "meanZcr": 0.656
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 28.095,
+            "endSec": 28.155,
+            "meanRms": 2987,
+            "meanZcr": 0.067
+          },
+          {
+            "phoneme": "f",
+            "viseme": "FV",
+            "acType": "labiodental",
+            "startSec": 28.155,
+            "endSec": 28.235,
+            "meanRms": 366,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "i",
+            "viseme": "EI",
+            "acType": "vowel",
+            "startSec": 28.235,
+            "endSec": 28.325,
+            "meanRms": 4825,
+            "meanZcr": 0.044
+          },
+          {
+            "phoneme": "g",
+            "viseme": "EI_25",
+            "acType": "stop",
+            "startSec": 28.325,
+            "endSec": 28.405,
+            "meanRms": 393,
+            "meanZcr": 0.349
+          },
+          {
+            "phoneme": "u",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 28.405,
+            "endSec": 28.465,
+            "meanRms": 2885,
+            "meanZcr": 0.025
+          },
+          {
+            "phoneme": "r",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 28.465,
+            "endSec": 28.51,
+            "meanRms": 1532,
+            "meanZcr": 0.017
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 28.51,
+            "endSec": 28.67,
+            "meanRms": 4424,
+            "meanZcr": 0.046
+          },
+          {
+            "phoneme": "ç",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 28.67,
+            "endSec": 28.765,
+            "meanRms": 1512,
+            "meanZcr": 0.68
+          },
+          {
+            "phoneme": "ɐ̃",
+            "viseme": "A_75",
+            "acType": "vowel",
+            "startSec": 28.765,
+            "endSec": 28.82,
+            "meanRms": 2201,
+            "meanZcr": 0.428
+          },
+          {
+            "phoneme": "w̃",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 28.82,
+            "endSec": 28.875,
+            "meanRms": 3772,
+            "meanZcr": 0.043
+          }
+        ]
+      },
+      {
+        "word": "passo",
+        "segIndex": 6,
+        "rawOffsetSec": 28.9202,
+        "startSec": 28.875,
+        "endSec": 29.2,
+        "durationSec": 0.325,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 28.875,
+            "endSec": 28.93,
+            "meanRms": 3114,
+            "meanZcr": 0.022
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 28.93,
+            "endSec": 28.99,
+            "meanRms": 929,
+            "meanZcr": 0.015
+          },
+          {
+            "phoneme": "ʃ",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 28.99,
+            "endSec": 29.035,
+            "meanRms": 409,
+            "meanZcr": 0.012
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 29.035,
+            "endSec": 29.2,
+            "meanRms": 4729,
+            "meanZcr": 0.215
+          }
+        ]
+      },
+      {
+        "word": "a",
+        "segIndex": 6,
+        "rawOffsetSec": 29.2491,
+        "startSec": 29.2,
+        "endSec": 29.255,
+        "durationSec": 0.055,
+        "phonemes": [
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 29.2,
+            "endSec": 29.255
+          }
+        ]
+      },
+      {
+        "word": "passo",
+        "segIndex": 6,
+        "rawOffsetSec": 29.3017,
+        "startSec": 29.255,
+        "endSec": 29.82,
+        "durationSec": 0.565,
+        "phonemes": [
+          {
+            "phoneme": "p",
+            "viseme": "MBP",
+            "acType": "bilabial",
+            "startSec": 29.255,
+            "endSec": 29.445,
+            "meanRms": 1860,
+            "meanZcr": 0.056
+          },
+          {
+            "phoneme": "a",
+            "viseme": "A",
+            "acType": "vowel",
+            "startSec": 29.445,
+            "endSec": 29.615,
+            "meanRms": 4650,
+            "meanZcr": 0.076
+          },
+          {
+            "phoneme": "ʃ",
+            "viseme": "EI_50",
+            "acType": "fricative",
+            "startSec": 29.615,
+            "endSec": 29.76,
+            "meanRms": 1777,
+            "meanZcr": 0.645
+          },
+          {
+            "phoneme": "o",
+            "viseme": "OU",
+            "acType": "rounded",
+            "startSec": 29.76,
+            "endSec": 29.82,
+            "meanRms": 1923,
+            "meanZcr": 0.235
+          }
+        ]
+      }
+    ],
+    "visemeEvents": [
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 0,
+        "endSec": 0.61,
+        "startFrame30fps": 0,
+        "endFrame30fps": 18
+      },
+      {
+        "word": "Olá",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 0.61,
+        "endSec": 0.805,
+        "meanRms": 4160,
+        "meanZcr": 0.049,
+        "startFrame30fps": 18,
+        "endFrame30fps": 24
+      },
+      {
+        "word": "Olá",
+        "phoneme": "l",
+        "viseme": "EI_50",
+        "acType": "consonant",
+        "startSec": 0.805,
+        "endSec": 0.89,
+        "meanRms": 6480,
+        "meanZcr": 0.051,
+        "startFrame30fps": 24,
+        "endFrame30fps": 27
+      },
+      {
+        "word": "Olá",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 0.89,
+        "endSec": 1.05,
+        "meanRms": 4715,
+        "meanZcr": 0.079,
+        "startFrame30fps": 27,
+        "endFrame30fps": 32
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 1.05,
+        "endSec": 1.395,
+        "startFrame30fps": 32,
+        "endFrame30fps": 42
+      },
+      {
+        "word": "Eu",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 1.395,
+        "endSec": 1.41,
+        "meanRms": 312,
+        "meanZcr": 0.131,
+        "startFrame30fps": 42,
+        "endFrame30fps": 42
+      },
+      {
+        "word": "Eu",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 1.41,
+        "endSec": 1.43,
+        "meanRms": 3020,
+        "meanZcr": 0.044,
+        "startFrame30fps": 42,
+        "endFrame30fps": 43
+      },
+      {
+        "word": "sou",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 1.43,
+        "endSec": 1.47,
+        "meanRms": 6564,
+        "meanZcr": 0.045,
+        "startFrame30fps": 43,
+        "endFrame30fps": 44
+      },
+      {
+        "word": "sou",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 1.47,
+        "endSec": 1.665,
+        "meanRms": 2649,
+        "meanZcr": 0.438,
+        "startFrame30fps": 44,
+        "endFrame30fps": 50
+      },
+      {
+        "word": "a",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 1.665,
+        "endSec": 1.74,
+        "startFrame30fps": 50,
+        "endFrame30fps": 52
+      },
+      {
+        "word": "Lia",
+        "phoneme": "l",
+        "viseme": "EI_50",
+        "acType": "consonant",
+        "startSec": 1.74,
+        "endSec": 1.835,
+        "meanRms": 7166,
+        "meanZcr": 0.069,
+        "startFrame30fps": 52,
+        "endFrame30fps": 55
+      },
+      {
+        "word": "Lia",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 1.835,
+        "endSec": 1.99,
+        "meanRms": 4619,
+        "meanZcr": 0.032,
+        "startFrame30fps": 55,
+        "endFrame30fps": 60
+      },
+      {
+        "word": "Lia",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 1.99,
+        "endSec": 2.17,
+        "meanRms": 3965,
+        "meanZcr": 0.039,
+        "startFrame30fps": 60,
+        "endFrame30fps": 65
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 2.17,
+        "endSec": 3.065,
+        "startFrame30fps": 65,
+        "endFrame30fps": 92
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 3.065,
+        "endSec": 3.155,
+        "meanRms": 10,
+        "meanZcr": 0.058,
+        "startFrame30fps": 92,
+        "endFrame30fps": 95
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 3.155,
+        "endSec": 3.195,
+        "meanRms": 1434,
+        "meanZcr": 0.044,
+        "startFrame30fps": 95,
+        "endFrame30fps": 96
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 3.195,
+        "endSec": 3.255,
+        "meanRms": 3999,
+        "meanZcr": 0.03,
+        "startFrame30fps": 96,
+        "endFrame30fps": 98
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 3.255,
+        "endSec": 3.31,
+        "meanRms": 3935,
+        "meanZcr": 0.018,
+        "startFrame30fps": 98,
+        "endFrame30fps": 99
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 3.31,
+        "endSec": 3.385,
+        "meanRms": 4201,
+        "meanZcr": 0.031,
+        "startFrame30fps": 99,
+        "endFrame30fps": 102
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 3.385,
+        "endSec": 3.455,
+        "meanRms": 4351,
+        "meanZcr": 0.066,
+        "startFrame30fps": 102,
+        "endFrame30fps": 104
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 3.455,
+        "endSec": 3.495,
+        "meanRms": 3670,
+        "meanZcr": 0.097,
+        "startFrame30fps": 104,
+        "endFrame30fps": 105
+      },
+      {
+        "word": "Primeiro",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 3.495,
+        "endSec": 3.565,
+        "meanRms": 2680,
+        "meanZcr": 0.038,
+        "startFrame30fps": 105,
+        "endFrame30fps": 107
+      },
+      {
+        "word": "vamos",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 3.575,
+        "endSec": 3.63,
+        "meanRms": 3552,
+        "meanZcr": 0.048,
+        "startFrame30fps": 107,
+        "endFrame30fps": 109
+      },
+      {
+        "word": "vamos",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 3.63,
+        "endSec": 3.69,
+        "meanRms": 1171,
+        "meanZcr": 0.027,
+        "startFrame30fps": 109,
+        "endFrame30fps": 111
+      },
+      {
+        "word": "vamos",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 3.69,
+        "endSec": 3.745,
+        "meanRms": 2119,
+        "meanZcr": 0.037,
+        "startFrame30fps": 111,
+        "endFrame30fps": 112
+      },
+      {
+        "word": "vamos",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 3.745,
+        "endSec": 3.84,
+        "meanRms": 5242,
+        "meanZcr": 0.046,
+        "startFrame30fps": 112,
+        "endFrame30fps": 115
+      },
+      {
+        "word": "vamos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 3.84,
+        "endSec": 3.88,
+        "meanRms": 4667,
+        "meanZcr": 0.022,
+        "startFrame30fps": 115,
+        "endFrame30fps": 116
+      },
+      {
+        "word": "preparar",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 3.88,
+        "endSec": 3.935,
+        "meanRms": 2763,
+        "meanZcr": 0.325,
+        "startFrame30fps": 116,
+        "endFrame30fps": 118
+      },
+      {
+        "word": "preparar",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 3.935,
+        "endSec": 4.035,
+        "meanRms": 777,
+        "meanZcr": 0.439,
+        "startFrame30fps": 118,
+        "endFrame30fps": 121
+      },
+      {
+        "word": "preparar",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 4.035,
+        "endSec": 4.12,
+        "meanRms": 3461,
+        "meanZcr": 0.049,
+        "startFrame30fps": 121,
+        "endFrame30fps": 124
+      },
+      {
+        "word": "preparar",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 4.12,
+        "endSec": 4.205,
+        "meanRms": 378,
+        "meanZcr": 0.023,
+        "startFrame30fps": 124,
+        "endFrame30fps": 126
+      },
+      {
+        "word": "preparar",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 4.205,
+        "endSec": 4.265,
+        "meanRms": 5558,
+        "meanZcr": 0.077,
+        "startFrame30fps": 126,
+        "endFrame30fps": 128
+      },
+      {
+        "word": "preparar",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 4.265,
+        "endSec": 4.305,
+        "meanRms": 4547,
+        "meanZcr": 0.078,
+        "startFrame30fps": 128,
+        "endFrame30fps": 129
+      },
+      {
+        "word": "preparar",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 4.305,
+        "endSec": 4.365,
+        "meanRms": 3041,
+        "meanZcr": 0.067,
+        "startFrame30fps": 129,
+        "endFrame30fps": 131
+      },
+      {
+        "word": "preparar",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 4.365,
+        "endSec": 4.405,
+        "meanRms": 5120,
+        "meanZcr": 0.074,
+        "startFrame30fps": 131,
+        "endFrame30fps": 132
+      },
+      {
+        "word": "nosso",
+        "phoneme": "n",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 4.405,
+        "endSec": 4.445,
+        "meanRms": 5564,
+        "meanZcr": 0.074,
+        "startFrame30fps": 132,
+        "endFrame30fps": 133
+      },
+      {
+        "word": "nosso",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 4.445,
+        "endSec": 4.575,
+        "meanRms": 3469,
+        "meanZcr": 0.027,
+        "startFrame30fps": 133,
+        "endFrame30fps": 137
+      },
+      {
+        "word": "nosso",
+        "phoneme": "ʃ",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 4.575,
+        "endSec": 4.615,
+        "meanRms": 4025,
+        "meanZcr": 0.026,
+        "startFrame30fps": 137,
+        "endFrame30fps": 138
+      },
+      {
+        "word": "nosso",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 4.615,
+        "endSec": 4.745,
+        "meanRms": 3516,
+        "meanZcr": 0.225,
+        "startFrame30fps": 138,
+        "endFrame30fps": 142
+      },
+      {
+        "word": "ambiente",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 4.745,
+        "endSec": 4.915,
+        "meanRms": 3235,
+        "meanZcr": 0.244,
+        "startFrame30fps": 142,
+        "endFrame30fps": 147
+      },
+      {
+        "word": "ambiente",
+        "phoneme": "mb",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 4.915,
+        "endSec": 4.975,
+        "meanRms": 2163,
+        "meanZcr": 0.019,
+        "startFrame30fps": 147,
+        "endFrame30fps": 149
+      },
+      {
+        "word": "ambiente",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 4.975,
+        "endSec": 5.035,
+        "meanRms": 3400,
+        "meanZcr": 0.031,
+        "startFrame30fps": 149,
+        "endFrame30fps": 151
+      },
+      {
+        "word": "ambiente",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 5.035,
+        "endSec": 5.095,
+        "meanRms": 3611,
+        "meanZcr": 0.044,
+        "startFrame30fps": 151,
+        "endFrame30fps": 153
+      },
+      {
+        "word": "ambiente",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 5.095,
+        "endSec": 5.135,
+        "meanRms": 3311,
+        "meanZcr": 0.029,
+        "startFrame30fps": 153,
+        "endFrame30fps": 154
+      },
+      {
+        "word": "ambiente",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 5.135,
+        "endSec": 5.235,
+        "meanRms": 3662,
+        "meanZcr": 0.067,
+        "startFrame30fps": 154,
+        "endFrame30fps": 157
+      },
+      {
+        "word": "no",
+        "phoneme": "n",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 5.235,
+        "endSec": 5.29,
+        "meanRms": 1181,
+        "meanZcr": 0.38,
+        "startFrame30fps": 157,
+        "endFrame30fps": 159
+      },
+      {
+        "word": "no",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 5.29,
+        "endSec": 5.365,
+        "meanRms": 3504,
+        "meanZcr": 0.023,
+        "startFrame30fps": 159,
+        "endFrame30fps": 161
+      },
+      {
+        "word": "Azure",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 5.365,
+        "endSec": 5.54,
+        "meanRms": 5114,
+        "meanZcr": 0.05,
+        "startFrame30fps": 161,
+        "endFrame30fps": 166
+      },
+      {
+        "word": "Azure",
+        "phoneme": "z",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 5.54,
+        "endSec": 5.64,
+        "meanRms": 1423,
+        "meanZcr": 0.461,
+        "startFrame30fps": 166,
+        "endFrame30fps": 169
+      },
+      {
+        "word": "Azure",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 5.64,
+        "endSec": 5.7,
+        "meanRms": 3312,
+        "meanZcr": 0.122,
+        "startFrame30fps": 169,
+        "endFrame30fps": 171
+      },
+      {
+        "word": "Azure",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 5.7,
+        "endSec": 5.74,
+        "meanRms": 4595,
+        "meanZcr": 0.036,
+        "startFrame30fps": 171,
+        "endFrame30fps": 172
+      },
+      {
+        "word": "Azure",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 5.74,
+        "endSec": 5.815,
+        "meanRms": 3993,
+        "meanZcr": 0.037,
+        "startFrame30fps": 172,
+        "endFrame30fps": 174
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 5.815,
+        "endSec": 6.91,
+        "startFrame30fps": 174,
+        "endFrame30fps": 207
+      },
+      {
+        "word": "Observe",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 6.91,
+        "endSec": 7.035,
+        "meanRms": 5657,
+        "meanZcr": 0.049,
+        "startFrame30fps": 207,
+        "endFrame30fps": 211
+      },
+      {
+        "word": "Observe",
+        "phoneme": "b",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 7.035,
+        "endSec": 7.09,
+        "meanRms": 2695,
+        "meanZcr": 0.025,
+        "startFrame30fps": 211,
+        "endFrame30fps": 213
+      },
+      {
+        "word": "Observe",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 7.09,
+        "endSec": 7.13,
+        "meanRms": 2665,
+        "meanZcr": 0.021,
+        "startFrame30fps": 213,
+        "endFrame30fps": 214
+      },
+      {
+        "word": "Observe",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 7.13,
+        "endSec": 7.18,
+        "meanRms": 3434,
+        "meanZcr": 0.207,
+        "startFrame30fps": 214,
+        "endFrame30fps": 215
+      },
+      {
+        "word": "Observe",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 7.18,
+        "endSec": 7.24,
+        "meanRms": 1947,
+        "meanZcr": 0.734,
+        "startFrame30fps": 215,
+        "endFrame30fps": 217
+      },
+      {
+        "word": "Observe",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 7.24,
+        "endSec": 7.325,
+        "meanRms": 1676,
+        "meanZcr": 0.6,
+        "startFrame30fps": 217,
+        "endFrame30fps": 220
+      },
+      {
+        "word": "Observe",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 7.325,
+        "endSec": 7.505,
+        "meanRms": 4739,
+        "meanZcr": 0.061,
+        "startFrame30fps": 220,
+        "endFrame30fps": 225
+      },
+      {
+        "word": "o",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 7.505,
+        "endSec": 7.585,
+        "startFrame30fps": 225,
+        "endFrame30fps": 228
+      },
+      {
+        "word": "exemplo",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 7.585,
+        "endSec": 7.755,
+        "meanRms": 4845,
+        "meanZcr": 0.044,
+        "startFrame30fps": 228,
+        "endFrame30fps": 233
+      },
+      {
+        "word": "exemplo",
+        "phoneme": "x",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 7.755,
+        "endSec": 7.85,
+        "meanRms": 1520,
+        "meanZcr": 0.564,
+        "startFrame30fps": 233,
+        "endFrame30fps": 236
+      },
+      {
+        "word": "exemplo",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 7.85,
+        "endSec": 7.9,
+        "meanRms": 4950,
+        "meanZcr": 0.063,
+        "startFrame30fps": 236,
+        "endFrame30fps": 237
+      },
+      {
+        "word": "exemplo",
+        "phoneme": "mp",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 7.9,
+        "endSec": 7.96,
+        "meanRms": 4831,
+        "meanZcr": 0.081,
+        "startFrame30fps": 237,
+        "endFrame30fps": 239
+      },
+      {
+        "word": "exemplo",
+        "phoneme": "l",
+        "viseme": "EI_50",
+        "acType": "consonant",
+        "startSec": 7.96,
+        "endSec": 8,
+        "meanRms": 4647,
+        "meanZcr": 0.049,
+        "startFrame30fps": 239,
+        "endFrame30fps": 240
+      },
+      {
+        "word": "exemplo",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 8,
+        "endSec": 8.06,
+        "meanRms": 2221,
+        "meanZcr": 0.019,
+        "startFrame30fps": 240,
+        "endFrame30fps": 242
+      },
+      {
+        "word": "à",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 8.06,
+        "endSec": 8.13,
+        "startFrame30fps": 242,
+        "endFrame30fps": 244
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 8.13,
+        "endSec": 8.27,
+        "meanRms": 5391,
+        "meanZcr": 0.068,
+        "startFrame30fps": 244,
+        "endFrame30fps": 248
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 8.27,
+        "endSec": 8.385,
+        "meanRms": 1476,
+        "meanZcr": 0.658,
+        "startFrame30fps": 248,
+        "endFrame30fps": 252
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "k",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 8.385,
+        "endSec": 8.46,
+        "meanRms": 221,
+        "meanZcr": 0.311,
+        "startFrame30fps": 252,
+        "endFrame30fps": 254
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 8.46,
+        "endSec": 8.605,
+        "meanRms": 4555,
+        "meanZcr": 0.05,
+        "startFrame30fps": 254,
+        "endFrame30fps": 258
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 8.605,
+        "endSec": 8.66,
+        "meanRms": 1121,
+        "meanZcr": 0.032,
+        "startFrame30fps": 258,
+        "endFrame30fps": 260
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "d",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 8.66,
+        "endSec": 8.72,
+        "meanRms": 642,
+        "meanZcr": 0.014,
+        "startFrame30fps": 260,
+        "endFrame30fps": 262
+      },
+      {
+        "word": "esquerda",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 8.72,
+        "endSec": 8.78,
+        "meanRms": 2321,
+        "meanZcr": 0.044,
+        "startFrame30fps": 262,
+        "endFrame30fps": 263
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 8.78,
+        "endSec": 9.83,
+        "startFrame30fps": 263,
+        "endFrame30fps": 295
+      },
+      {
+        "word": "A",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 9.83,
+        "endSec": 9.865,
+        "startFrame30fps": 295,
+        "endFrame30fps": 296
+      },
+      {
+        "word": "Bianca",
+        "phoneme": "b",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 9.865,
+        "endSec": 9.92,
+        "meanRms": 6005,
+        "meanZcr": 0.085,
+        "startFrame30fps": 296,
+        "endFrame30fps": 298
+      },
+      {
+        "word": "Bianca",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 9.92,
+        "endSec": 10.005,
+        "meanRms": 2522,
+        "meanZcr": 0.029,
+        "startFrame30fps": 298,
+        "endFrame30fps": 300
+      },
+      {
+        "word": "Bianca",
+        "phoneme": "ɐ̃",
+        "viseme": "A_75",
+        "acType": "vowel",
+        "startSec": 10.005,
+        "endSec": 10.1,
+        "meanRms": 3163,
+        "meanZcr": 0.026,
+        "startFrame30fps": 300,
+        "endFrame30fps": 303
+      },
+      {
+        "word": "Bianca",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 10.1,
+        "endSec": 10.14,
+        "meanRms": 3746,
+        "meanZcr": 0.042,
+        "startFrame30fps": 303,
+        "endFrame30fps": 304
+      },
+      {
+        "word": "Bianca",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 10.14,
+        "endSec": 10.365,
+        "meanRms": 5472,
+        "meanZcr": 0.049,
+        "startFrame30fps": 304,
+        "endFrame30fps": 311
+      },
+      {
+        "word": "abriu",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 10.365,
+        "endSec": 10.44,
+        "meanRms": 2148,
+        "meanZcr": 0.104,
+        "startFrame30fps": 311,
+        "endFrame30fps": 313
+      },
+      {
+        "word": "abriu",
+        "phoneme": "b",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 10.44,
+        "endSec": 10.49,
+        "meanRms": 6233,
+        "meanZcr": 0.061,
+        "startFrame30fps": 313,
+        "endFrame30fps": 315
+      },
+      {
+        "word": "abriu",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 10.49,
+        "endSec": 10.53,
+        "meanRms": 2471,
+        "meanZcr": 0.026,
+        "startFrame30fps": 315,
+        "endFrame30fps": 316
+      },
+      {
+        "word": "abriu",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 10.53,
+        "endSec": 10.58,
+        "meanRms": 1414,
+        "meanZcr": 0.015,
+        "startFrame30fps": 316,
+        "endFrame30fps": 317
+      },
+      {
+        "word": "abriu",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 10.58,
+        "endSec": 10.63,
+        "meanRms": 2637,
+        "meanZcr": 0.028,
+        "startFrame30fps": 317,
+        "endFrame30fps": 319
+      },
+      {
+        "word": "o",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 10.63,
+        "endSec": 10.68,
+        "startFrame30fps": 319,
+        "endFrame30fps": 320
+      },
+      {
+        "word": "portal",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 10.68,
+        "endSec": 10.805,
+        "meanRms": 2435,
+        "meanZcr": 0.027,
+        "startFrame30fps": 320,
+        "endFrame30fps": 324
+      },
+      {
+        "word": "portal",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 10.805,
+        "endSec": 10.91,
+        "meanRms": 3804,
+        "meanZcr": 0.048,
+        "startFrame30fps": 324,
+        "endFrame30fps": 327
+      },
+      {
+        "word": "portal",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 10.91,
+        "endSec": 10.975,
+        "meanRms": 1196,
+        "meanZcr": 0.028,
+        "startFrame30fps": 327,
+        "endFrame30fps": 329
+      },
+      {
+        "word": "portal",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 10.975,
+        "endSec": 11.05,
+        "meanRms": 247,
+        "meanZcr": 0.041,
+        "startFrame30fps": 329,
+        "endFrame30fps": 332
+      },
+      {
+        "word": "portal",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 11.05,
+        "endSec": 11.125,
+        "meanRms": 6271,
+        "meanZcr": 0.072,
+        "startFrame30fps": 332,
+        "endFrame30fps": 334
+      },
+      {
+        "word": "portal",
+        "phoneme": "w",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 11.125,
+        "endSec": 11.18,
+        "meanRms": 7787,
+        "meanZcr": 0.078,
+        "startFrame30fps": 334,
+        "endFrame30fps": 335
+      },
+      {
+        "word": "para",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 11.18,
+        "endSec": 11.23,
+        "meanRms": 5814,
+        "meanZcr": 0.063,
+        "startFrame30fps": 335,
+        "endFrame30fps": 337
+      },
+      {
+        "word": "para",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 11.23,
+        "endSec": 11.28,
+        "meanRms": 963,
+        "meanZcr": 0.036,
+        "startFrame30fps": 337,
+        "endFrame30fps": 338
+      },
+      {
+        "word": "para",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 11.28,
+        "endSec": 11.325,
+        "meanRms": 121,
+        "meanZcr": 0.007,
+        "startFrame30fps": 338,
+        "endFrame30fps": 340
+      },
+      {
+        "word": "para",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 11.325,
+        "endSec": 11.38,
+        "meanRms": 4905,
+        "meanZcr": 0.053,
+        "startFrame30fps": 340,
+        "endFrame30fps": 341
+      },
+      {
+        "word": "verificar",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 11.38,
+        "endSec": 11.435,
+        "meanRms": 4740,
+        "meanZcr": 0.076,
+        "startFrame30fps": 341,
+        "endFrame30fps": 343
+      },
+      {
+        "word": "verificar",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 11.435,
+        "endSec": 11.485,
+        "meanRms": 3140,
+        "meanZcr": 0.043,
+        "startFrame30fps": 343,
+        "endFrame30fps": 345
+      },
+      {
+        "word": "verificar",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 11.485,
+        "endSec": 11.525,
+        "meanRms": 1035,
+        "meanZcr": 0.031,
+        "startFrame30fps": 345,
+        "endFrame30fps": 346
+      },
+      {
+        "word": "verificar",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 11.525,
+        "endSec": 11.645,
+        "meanRms": 4614,
+        "meanZcr": 0.035,
+        "startFrame30fps": 346,
+        "endFrame30fps": 349
+      },
+      {
+        "word": "verificar",
+        "phoneme": "f",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 11.645,
+        "endSec": 11.75,
+        "meanRms": 477,
+        "meanZcr": 0.315,
+        "startFrame30fps": 349,
+        "endFrame30fps": 353
+      },
+      {
+        "word": "verificar",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 11.75,
+        "endSec": 11.8,
+        "meanRms": 2623,
+        "meanZcr": 0.047,
+        "startFrame30fps": 353,
+        "endFrame30fps": 354
+      },
+      {
+        "word": "verificar",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 11.8,
+        "endSec": 11.855,
+        "meanRms": 143,
+        "meanZcr": 0.024,
+        "startFrame30fps": 354,
+        "endFrame30fps": 356
+      },
+      {
+        "word": "verificar",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 11.855,
+        "endSec": 11.915,
+        "meanRms": 1780,
+        "meanZcr": 0.101,
+        "startFrame30fps": 356,
+        "endFrame30fps": 357
+      },
+      {
+        "word": "verificar",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 11.915,
+        "endSec": 11.955,
+        "meanRms": 6054,
+        "meanZcr": 0.071,
+        "startFrame30fps": 357,
+        "endFrame30fps": 359
+      },
+      {
+        "word": "o",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 11.955,
+        "endSec": 12.02,
+        "startFrame30fps": 359,
+        "endFrame30fps": 361
+      },
+      {
+        "word": "grupo",
+        "phoneme": "g",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 12.02,
+        "endSec": 12.06,
+        "meanRms": 3660,
+        "meanZcr": 0.04,
+        "startFrame30fps": 361,
+        "endFrame30fps": 362
+      },
+      {
+        "word": "grupo",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 12.06,
+        "endSec": 12.1,
+        "meanRms": 2406,
+        "meanZcr": 0.027,
+        "startFrame30fps": 362,
+        "endFrame30fps": 363
+      },
+      {
+        "word": "grupo",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 12.1,
+        "endSec": 12.16,
+        "meanRms": 1037,
+        "meanZcr": 0.014,
+        "startFrame30fps": 363,
+        "endFrame30fps": 365
+      },
+      {
+        "word": "grupo",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 12.16,
+        "endSec": 12.225,
+        "meanRms": 2080,
+        "meanZcr": 0.023,
+        "startFrame30fps": 365,
+        "endFrame30fps": 367
+      },
+      {
+        "word": "grupo",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 12.225,
+        "endSec": 12.365,
+        "meanRms": 2874,
+        "meanZcr": 0.028,
+        "startFrame30fps": 367,
+        "endFrame30fps": 371
+      },
+      {
+        "word": "de",
+        "phoneme": "d",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 12.365,
+        "endSec": 12.41,
+        "meanRms": 426,
+        "meanZcr": 0.053,
+        "startFrame30fps": 371,
+        "endFrame30fps": 372
+      },
+      {
+        "word": "de",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 12.41,
+        "endSec": 12.47,
+        "meanRms": 3616,
+        "meanZcr": 0.029,
+        "startFrame30fps": 372,
+        "endFrame30fps": 374
+      },
+      {
+        "word": "recursos",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 12.47,
+        "endSec": 12.525,
+        "meanRms": 1412,
+        "meanZcr": 0.289,
+        "startFrame30fps": 374,
+        "endFrame30fps": 376
+      },
+      {
+        "word": "recursos",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 12.525,
+        "endSec": 12.69,
+        "meanRms": 4050,
+        "meanZcr": 0.032,
+        "startFrame30fps": 376,
+        "endFrame30fps": 381
+      },
+      {
+        "word": "recursos",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 12.69,
+        "endSec": 12.8,
+        "meanRms": 224,
+        "meanZcr": 0.052,
+        "startFrame30fps": 381,
+        "endFrame30fps": 384
+      },
+      {
+        "word": "recursos",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 12.8,
+        "endSec": 12.935,
+        "meanRms": 4221,
+        "meanZcr": 0.033,
+        "startFrame30fps": 384,
+        "endFrame30fps": 388
+      },
+      {
+        "word": "recursos",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 12.935,
+        "endSec": 13.015,
+        "meanRms": 1291,
+        "meanZcr": 0.349,
+        "startFrame30fps": 388,
+        "endFrame30fps": 390
+      },
+      {
+        "word": "recursos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 13.015,
+        "endSec": 13.1,
+        "meanRms": 1699,
+        "meanZcr": 0.605,
+        "startFrame30fps": 390,
+        "endFrame30fps": 393
+      },
+      {
+        "word": "recursos",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 13.1,
+        "endSec": 13.16,
+        "meanRms": 1324,
+        "meanZcr": 0.233,
+        "startFrame30fps": 393,
+        "endFrame30fps": 395
+      },
+      {
+        "word": "recursos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 13.16,
+        "endSec": 13.26,
+        "meanRms": 1603,
+        "meanZcr": 0.697,
+        "startFrame30fps": 395,
+        "endFrame30fps": 398
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 13.26,
+        "endSec": 14.275,
+        "startFrame30fps": 398,
+        "endFrame30fps": 428
+      },
+      {
+        "word": "Agora",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 14.275,
+        "endSec": 14.38,
+        "meanRms": 3125,
+        "meanZcr": 0.072,
+        "startFrame30fps": 428,
+        "endFrame30fps": 431
+      },
+      {
+        "word": "Agora",
+        "phoneme": "g",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 14.38,
+        "endSec": 14.465,
+        "meanRms": 866,
+        "meanZcr": 0.023,
+        "startFrame30fps": 431,
+        "endFrame30fps": 434
+      },
+      {
+        "word": "Agora",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 14.465,
+        "endSec": 14.575,
+        "meanRms": 7119,
+        "meanZcr": 0.056,
+        "startFrame30fps": 434,
+        "endFrame30fps": 437
+      },
+      {
+        "word": "Agora",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 14.575,
+        "endSec": 14.615,
+        "meanRms": 6695,
+        "meanZcr": 0.071,
+        "startFrame30fps": 437,
+        "endFrame30fps": 438
+      },
+      {
+        "word": "Agora",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 14.615,
+        "endSec": 14.685,
+        "meanRms": 3662,
+        "meanZcr": 0.061,
+        "startFrame30fps": 438,
+        "endFrame30fps": 441
+      },
+      {
+        "word": "vamos",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 14.75,
+        "endSec": 14.805,
+        "meanRms": 231,
+        "meanZcr": 0.015,
+        "startFrame30fps": 443,
+        "endFrame30fps": 444
+      },
+      {
+        "word": "vamos",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 14.805,
+        "endSec": 14.86,
+        "meanRms": 85,
+        "meanZcr": 0.101,
+        "startFrame30fps": 444,
+        "endFrame30fps": 446
+      },
+      {
+        "word": "vamos",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 14.86,
+        "endSec": 14.915,
+        "meanRms": 1533,
+        "meanZcr": 0.073,
+        "startFrame30fps": 446,
+        "endFrame30fps": 447
+      },
+      {
+        "word": "vamos",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 14.915,
+        "endSec": 15,
+        "meanRms": 5268,
+        "meanZcr": 0.038,
+        "startFrame30fps": 447,
+        "endFrame30fps": 450
+      },
+      {
+        "word": "vamos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 15,
+        "endSec": 15.04,
+        "meanRms": 5239,
+        "meanZcr": 0.02,
+        "startFrame30fps": 450,
+        "endFrame30fps": 451
+      },
+      {
+        "word": "conferir",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 15.04,
+        "endSec": 15.08,
+        "meanRms": 3172,
+        "meanZcr": 0.183,
+        "startFrame30fps": 451,
+        "endFrame30fps": 452
+      },
+      {
+        "word": "conferir",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 15.08,
+        "endSec": 15.14,
+        "meanRms": 1769,
+        "meanZcr": 0.65,
+        "startFrame30fps": 452,
+        "endFrame30fps": 454
+      },
+      {
+        "word": "conferir",
+        "phoneme": "f",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 15.14,
+        "endSec": 15.21,
+        "meanRms": 473,
+        "meanZcr": 0.242,
+        "startFrame30fps": 454,
+        "endFrame30fps": 456
+      },
+      {
+        "word": "conferir",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 15.21,
+        "endSec": 15.295,
+        "meanRms": 4979,
+        "meanZcr": 0.041,
+        "startFrame30fps": 456,
+        "endFrame30fps": 459
+      },
+      {
+        "word": "conferir",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 15.295,
+        "endSec": 15.375,
+        "meanRms": 445,
+        "meanZcr": 0.308,
+        "startFrame30fps": 459,
+        "endFrame30fps": 461
+      },
+      {
+        "word": "conferir",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 15.375,
+        "endSec": 15.46,
+        "meanRms": 6048,
+        "meanZcr": 0.055,
+        "startFrame30fps": 461,
+        "endFrame30fps": 464
+      },
+      {
+        "word": "conferir",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 15.46,
+        "endSec": 15.54,
+        "meanRms": 2208,
+        "meanZcr": 0.023,
+        "startFrame30fps": 464,
+        "endFrame30fps": 466
+      },
+      {
+        "word": "as",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 15.54,
+        "endSec": 15.63,
+        "meanRms": 3459,
+        "meanZcr": 0.048,
+        "startFrame30fps": 466,
+        "endFrame30fps": 469
+      },
+      {
+        "word": "as",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 15.63,
+        "endSec": 15.67,
+        "meanRms": 4552,
+        "meanZcr": 0.079,
+        "startFrame30fps": 469,
+        "endFrame30fps": 470
+      },
+      {
+        "word": "permissões",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 15.67,
+        "endSec": 15.725,
+        "meanRms": 2346,
+        "meanZcr": 0.428,
+        "startFrame30fps": 470,
+        "endFrame30fps": 472
+      },
+      {
+        "word": "permissões",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 15.725,
+        "endSec": 15.775,
+        "meanRms": 1695,
+        "meanZcr": 0.671,
+        "startFrame30fps": 472,
+        "endFrame30fps": 473
+      },
+      {
+        "word": "permissões",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 15.775,
+        "endSec": 15.815,
+        "meanRms": 222,
+        "meanZcr": 0.359,
+        "startFrame30fps": 473,
+        "endFrame30fps": 474
+      },
+      {
+        "word": "permissões",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 15.815,
+        "endSec": 15.87,
+        "meanRms": 2945,
+        "meanZcr": 0.067,
+        "startFrame30fps": 474,
+        "endFrame30fps": 476
+      },
+      {
+        "word": "permissões",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 15.87,
+        "endSec": 16.09,
+        "meanRms": 4948,
+        "meanZcr": 0.09,
+        "startFrame30fps": 476,
+        "endFrame30fps": 483
+      },
+      {
+        "word": "permissões",
+        "phoneme": "ʃ",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 16.09,
+        "endSec": 16.22,
+        "meanRms": 2100,
+        "meanZcr": 0.673,
+        "startFrame30fps": 483,
+        "endFrame30fps": 487
+      },
+      {
+        "word": "permissões",
+        "phoneme": "õ",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 16.22,
+        "endSec": 16.35,
+        "meanRms": 3827,
+        "meanZcr": 0.063,
+        "startFrame30fps": 487,
+        "endFrame30fps": 491
+      },
+      {
+        "word": "permissões",
+        "phoneme": "j̃",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 16.35,
+        "endSec": 16.435,
+        "meanRms": 1806,
+        "meanZcr": 0.038,
+        "startFrame30fps": 491,
+        "endFrame30fps": 493
+      },
+      {
+        "word": "permissões",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 16.435,
+        "endSec": 16.565,
+        "meanRms": 1365,
+        "meanZcr": 0.664,
+        "startFrame30fps": 493,
+        "endFrame30fps": 497
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 16.565,
+        "endSec": 16.825,
+        "startFrame30fps": 497,
+        "endFrame30fps": 505
+      },
+      {
+        "word": "Muito",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 16.825,
+        "endSec": 16.935,
+        "meanRms": 173,
+        "meanZcr": 0.269,
+        "startFrame30fps": 505,
+        "endFrame30fps": 508
+      },
+      {
+        "word": "Muito",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 16.935,
+        "endSec": 17.03,
+        "meanRms": 4150,
+        "meanZcr": 0.017,
+        "startFrame30fps": 508,
+        "endFrame30fps": 511
+      },
+      {
+        "word": "Muito",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 17.03,
+        "endSec": 17.115,
+        "meanRms": 5923,
+        "meanZcr": 0.02,
+        "startFrame30fps": 511,
+        "endFrame30fps": 513
+      },
+      {
+        "word": "Muito",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 17.115,
+        "endSec": 17.155,
+        "meanRms": 5572,
+        "meanZcr": 0.024,
+        "startFrame30fps": 513,
+        "endFrame30fps": 515
+      },
+      {
+        "word": "Muito",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 17.155,
+        "endSec": 17.215,
+        "meanRms": 295,
+        "meanZcr": 0.065,
+        "startFrame30fps": 515,
+        "endFrame30fps": 516
+      },
+      {
+        "word": "bem",
+        "phoneme": "b",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 17.215,
+        "endSec": 17.32,
+        "meanRms": 3312,
+        "meanZcr": 0.045,
+        "startFrame30fps": 516,
+        "endFrame30fps": 520
+      },
+      {
+        "word": "bem",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 17.32,
+        "endSec": 17.49,
+        "meanRms": 3947,
+        "meanZcr": 0.048,
+        "startFrame30fps": 520,
+        "endFrame30fps": 525
+      },
+      {
+        "word": "bem",
+        "phoneme": "m_coda",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 17.49,
+        "endSec": 17.57,
+        "meanRms": 1839,
+        "meanZcr": 0.04,
+        "startFrame30fps": 525,
+        "endFrame30fps": 527
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 17.57,
+        "endSec": 18.79,
+        "startFrame30fps": 527,
+        "endFrame30fps": 564
+      },
+      {
+        "word": "Antes",
+        "phoneme": "ɐ̃",
+        "viseme": "A_75",
+        "acType": "vowel",
+        "startSec": 18.79,
+        "endSec": 18.91,
+        "meanRms": 4945,
+        "meanZcr": 0.064,
+        "startFrame30fps": 564,
+        "endFrame30fps": 567
+      },
+      {
+        "word": "Antes",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 18.91,
+        "endSec": 18.95,
+        "meanRms": 4728,
+        "meanZcr": 0.06,
+        "startFrame30fps": 567,
+        "endFrame30fps": 569
+      },
+      {
+        "word": "Antes",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 18.95,
+        "endSec": 19,
+        "meanRms": 2476,
+        "meanZcr": 0.028,
+        "startFrame30fps": 569,
+        "endFrame30fps": 570
+      },
+      {
+        "word": "Antes",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 19,
+        "endSec": 19.075,
+        "meanRms": 1097,
+        "meanZcr": 0.35,
+        "startFrame30fps": 570,
+        "endFrame30fps": 572
+      },
+      {
+        "word": "de",
+        "phoneme": "d",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 19.075,
+        "endSec": 19.115,
+        "meanRms": 5309,
+        "meanZcr": 0.027,
+        "startFrame30fps": 572,
+        "endFrame30fps": 573
+      },
+      {
+        "word": "de",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 19.115,
+        "endSec": 19.185,
+        "meanRms": 3169,
+        "meanZcr": 0.263,
+        "startFrame30fps": 573,
+        "endFrame30fps": 576
+      },
+      {
+        "word": "continuar",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 19.185,
+        "endSec": 19.225,
+        "meanRms": 2582,
+        "meanZcr": 0.305,
+        "startFrame30fps": 576,
+        "endFrame30fps": 577
+      },
+      {
+        "word": "continuar",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 19.225,
+        "endSec": 19.285,
+        "meanRms": 2576,
+        "meanZcr": 0.053,
+        "startFrame30fps": 577,
+        "endFrame30fps": 579
+      },
+      {
+        "word": "continuar",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 19.285,
+        "endSec": 19.34,
+        "meanRms": 399,
+        "meanZcr": 0.055,
+        "startFrame30fps": 579,
+        "endFrame30fps": 580
+      },
+      {
+        "word": "continuar",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 19.34,
+        "endSec": 19.435,
+        "meanRms": 4436,
+        "meanZcr": 0.028,
+        "startFrame30fps": 580,
+        "endFrame30fps": 583
+      },
+      {
+        "word": "continuar",
+        "phoneme": "n",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 19.435,
+        "endSec": 19.515,
+        "meanRms": 1077,
+        "meanZcr": 0.323,
+        "startFrame30fps": 583,
+        "endFrame30fps": 585
+      },
+      {
+        "word": "continuar",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 19.515,
+        "endSec": 19.66,
+        "meanRms": 3257,
+        "meanZcr": 0.026,
+        "startFrame30fps": 585,
+        "endFrame30fps": 590
+      },
+      {
+        "word": "continuar",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 19.66,
+        "endSec": 19.81,
+        "meanRms": 5473,
+        "meanZcr": 0.075,
+        "startFrame30fps": 590,
+        "endFrame30fps": 594
+      },
+      {
+        "word": "continuar",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 19.81,
+        "endSec": 19.85,
+        "meanRms": 5054,
+        "meanZcr": 0.069,
+        "startFrame30fps": 594,
+        "endFrame30fps": 596
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 19.85,
+        "endSec": 20.13,
+        "startFrame30fps": 596,
+        "endFrame30fps": 604
+      },
+      {
+        "word": "uma",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 20.13,
+        "endSec": 20.205,
+        "meanRms": 1803,
+        "meanZcr": 0.034,
+        "startFrame30fps": 604,
+        "endFrame30fps": 606
+      },
+      {
+        "word": "uma",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 20.205,
+        "endSec": 20.245,
+        "meanRms": 6719,
+        "meanZcr": 0.019,
+        "startFrame30fps": 606,
+        "endFrame30fps": 607
+      },
+      {
+        "word": "uma",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 20.245,
+        "endSec": 20.285,
+        "meanRms": 6597,
+        "meanZcr": 0.019,
+        "startFrame30fps": 607,
+        "endFrame30fps": 609
+      },
+      {
+        "word": "atenção",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 20.285,
+        "endSec": 20.41,
+        "meanRms": 5973,
+        "meanZcr": 0.054,
+        "startFrame30fps": 609,
+        "endFrame30fps": 612
+      },
+      {
+        "word": "atenção",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 20.41,
+        "endSec": 20.495,
+        "meanRms": 289,
+        "meanZcr": 0.05,
+        "startFrame30fps": 612,
+        "endFrame30fps": 615
+      },
+      {
+        "word": "atenção",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 20.495,
+        "endSec": 20.6,
+        "meanRms": 3515,
+        "meanZcr": 0.026,
+        "startFrame30fps": 615,
+        "endFrame30fps": 618
+      },
+      {
+        "word": "atenção",
+        "phoneme": "ç",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 20.6,
+        "endSec": 20.655,
+        "meanRms": 1378,
+        "meanZcr": 0.521,
+        "startFrame30fps": 618,
+        "endFrame30fps": 620
+      },
+      {
+        "word": "atenção",
+        "phoneme": "ɐ̃",
+        "viseme": "A_75",
+        "acType": "vowel",
+        "startSec": 20.655,
+        "endSec": 20.71,
+        "meanRms": 1608,
+        "meanZcr": 0.756,
+        "startFrame30fps": 620,
+        "endFrame30fps": 621
+      },
+      {
+        "word": "atenção",
+        "phoneme": "w̃",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 20.71,
+        "endSec": 20.765,
+        "meanRms": 3474,
+        "meanZcr": 0.248,
+        "startFrame30fps": 621,
+        "endFrame30fps": 623
+      },
+      {
+        "word": "importante",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 20.765,
+        "endSec": 20.92,
+        "meanRms": 6012,
+        "meanZcr": 0.027,
+        "startFrame30fps": 623,
+        "endFrame30fps": 628
+      },
+      {
+        "word": "importante",
+        "phoneme": "mp",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 20.92,
+        "endSec": 21,
+        "meanRms": 542,
+        "meanZcr": 0.04,
+        "startFrame30fps": 628,
+        "endFrame30fps": 630
+      },
+      {
+        "word": "importante",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 21,
+        "endSec": 21.1,
+        "meanRms": 5546,
+        "meanZcr": 0.047,
+        "startFrame30fps": 630,
+        "endFrame30fps": 633
+      },
+      {
+        "word": "importante",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 21.1,
+        "endSec": 21.145,
+        "meanRms": 385,
+        "meanZcr": 0.014,
+        "startFrame30fps": 633,
+        "endFrame30fps": 634
+      },
+      {
+        "word": "importante",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 21.145,
+        "endSec": 21.205,
+        "meanRms": 206,
+        "meanZcr": 0.056,
+        "startFrame30fps": 634,
+        "endFrame30fps": 636
+      },
+      {
+        "word": "importante",
+        "phoneme": "ɐ̃",
+        "viseme": "A_75",
+        "acType": "vowel",
+        "startSec": 21.205,
+        "endSec": 21.395,
+        "meanRms": 4218,
+        "meanZcr": 0.049,
+        "startFrame30fps": 636,
+        "endFrame30fps": 642
+      },
+      {
+        "word": "importante",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 21.395,
+        "endSec": 21.48,
+        "meanRms": 919,
+        "meanZcr": 0.21,
+        "startFrame30fps": 642,
+        "endFrame30fps": 644
+      },
+      {
+        "word": "importante",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 21.48,
+        "endSec": 21.55,
+        "meanRms": 1431,
+        "meanZcr": 0.461,
+        "startFrame30fps": 644,
+        "endFrame30fps": 647
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 21.55,
+        "endSec": 21.7032,
+        "startFrame30fps": 647,
+        "endFrame30fps": 651
+      },
+      {
+        "word": "o",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 21.7032,
+        "endSec": 21.8131,
+        "startFrame30fps": 651,
+        "endFrame30fps": 654
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 21.815,
+        "endSec": 21.995,
+        "meanRms": 5590,
+        "meanZcr": 0.036,
+        "startFrame30fps": 654,
+        "endFrame30fps": 660
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 21.995,
+        "endSec": 22.055,
+        "meanRms": 2365,
+        "meanZcr": 0.327,
+        "startFrame30fps": 660,
+        "endFrame30fps": 662
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "ç",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 22.055,
+        "endSec": 22.12,
+        "meanRms": 1621,
+        "meanZcr": 0.677,
+        "startFrame30fps": 662,
+        "endFrame30fps": 664
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 22.12,
+        "endSec": 22.18,
+        "meanRms": 5184,
+        "meanZcr": 0.07,
+        "startFrame30fps": 664,
+        "endFrame30fps": 665
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 22.18,
+        "endSec": 22.235,
+        "meanRms": 4311,
+        "meanZcr": 0.019,
+        "startFrame30fps": 665,
+        "endFrame30fps": 667
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 22.235,
+        "endSec": 22.285,
+        "meanRms": 4547,
+        "meanZcr": 0.02,
+        "startFrame30fps": 667,
+        "endFrame30fps": 669
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 22.285,
+        "endSec": 22.325,
+        "meanRms": 4760,
+        "meanZcr": 0.038,
+        "startFrame30fps": 669,
+        "endFrame30fps": 670
+      },
+      {
+        "word": "orçamento",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 22.325,
+        "endSec": 22.4,
+        "meanRms": 4975,
+        "meanZcr": 0.027,
+        "startFrame30fps": 670,
+        "endFrame30fps": 672
+      },
+      {
+        "word": "envia",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 22.4,
+        "endSec": 22.45,
+        "meanRms": 371,
+        "meanZcr": 0.075,
+        "startFrame30fps": 672,
+        "endFrame30fps": 674
+      },
+      {
+        "word": "envia",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 22.45,
+        "endSec": 22.505,
+        "meanRms": 3822,
+        "meanZcr": 0.065,
+        "startFrame30fps": 674,
+        "endFrame30fps": 675
+      },
+      {
+        "word": "envia",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 22.505,
+        "endSec": 22.595,
+        "meanRms": 6434,
+        "meanZcr": 0.022,
+        "startFrame30fps": 675,
+        "endFrame30fps": 678
+      },
+      {
+        "word": "envia",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 22.595,
+        "endSec": 22.695,
+        "meanRms": 1948,
+        "meanZcr": 0.053,
+        "startFrame30fps": 678,
+        "endFrame30fps": 681
+      },
+      {
+        "word": "avisos",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 22.695,
+        "endSec": 22.825,
+        "meanRms": 5163,
+        "meanZcr": 0.06,
+        "startFrame30fps": 681,
+        "endFrame30fps": 685
+      },
+      {
+        "word": "avisos",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 22.825,
+        "endSec": 22.93,
+        "meanRms": 960,
+        "meanZcr": 0.06,
+        "startFrame30fps": 685,
+        "endFrame30fps": 688
+      },
+      {
+        "word": "avisos",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 22.93,
+        "endSec": 23.07,
+        "meanRms": 3523,
+        "meanZcr": 0.026,
+        "startFrame30fps": 688,
+        "endFrame30fps": 692
+      },
+      {
+        "word": "avisos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 23.07,
+        "endSec": 23.16,
+        "meanRms": 1923,
+        "meanZcr": 0.429,
+        "startFrame30fps": 692,
+        "endFrame30fps": 695
+      },
+      {
+        "word": "avisos",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 23.16,
+        "endSec": 23.225,
+        "meanRms": 2658,
+        "meanZcr": 0.067,
+        "startFrame30fps": 695,
+        "endFrame30fps": 697
+      },
+      {
+        "word": "avisos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 23.225,
+        "endSec": 23.305,
+        "meanRms": 2088,
+        "meanZcr": 0.561,
+        "startFrame30fps": 697,
+        "endFrame30fps": 699
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 23.305,
+        "endSec": 23.535,
+        "startFrame30fps": 699,
+        "endFrame30fps": 706
+      },
+      {
+        "word": "mas",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 23.535,
+        "endSec": 23.64,
+        "meanRms": 184,
+        "meanZcr": 0.254,
+        "startFrame30fps": 706,
+        "endFrame30fps": 709
+      },
+      {
+        "word": "mas",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 23.64,
+        "endSec": 23.69,
+        "meanRms": 3893,
+        "meanZcr": 0.033,
+        "startFrame30fps": 709,
+        "endFrame30fps": 711
+      },
+      {
+        "word": "mas",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 23.69,
+        "endSec": 23.73,
+        "meanRms": 5983,
+        "meanZcr": 0.061,
+        "startFrame30fps": 711,
+        "endFrame30fps": 712
+      },
+      {
+        "word": "não",
+        "phoneme": "n",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 23.73,
+        "endSec": 23.82,
+        "meanRms": 2861,
+        "meanZcr": 0.332,
+        "startFrame30fps": 712,
+        "endFrame30fps": 715
+      },
+      {
+        "word": "não",
+        "phoneme": "ɐ̃",
+        "viseme": "A_75",
+        "acType": "vowel",
+        "startSec": 23.82,
+        "endSec": 23.875,
+        "meanRms": 2310,
+        "meanZcr": 0.144,
+        "startFrame30fps": 715,
+        "endFrame30fps": 716
+      },
+      {
+        "word": "não",
+        "phoneme": "w̃",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 23.875,
+        "endSec": 23.93,
+        "meanRms": 5223,
+        "meanZcr": 0.036,
+        "startFrame30fps": 716,
+        "endFrame30fps": 718
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 23.93,
+        "endSec": 24.09,
+        "meanRms": 5711,
+        "meanZcr": 0.03,
+        "startFrame30fps": 718,
+        "endFrame30fps": 723
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 24.09,
+        "endSec": 24.165,
+        "meanRms": 257,
+        "meanZcr": 0.039,
+        "startFrame30fps": 723,
+        "endFrame30fps": 725
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 24.165,
+        "endSec": 24.27,
+        "meanRms": 4022,
+        "meanZcr": 0.044,
+        "startFrame30fps": 725,
+        "endFrame30fps": 728
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "ʁ",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 24.27,
+        "endSec": 24.325,
+        "meanRms": 1531,
+        "meanZcr": 0.021,
+        "startFrame30fps": 728,
+        "endFrame30fps": 730
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 24.325,
+        "endSec": 24.425,
+        "meanRms": 3955,
+        "meanZcr": 0.032,
+        "startFrame30fps": 730,
+        "endFrame30fps": 733
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "mp",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 24.425,
+        "endSec": 24.485,
+        "meanRms": 4433,
+        "meanZcr": 0.041,
+        "startFrame30fps": 733,
+        "endFrame30fps": 735
+      },
+      {
+        "word": "interrompe",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 24.485,
+        "endSec": 24.54,
+        "meanRms": 2337,
+        "meanZcr": 0.02,
+        "startFrame30fps": 735,
+        "endFrame30fps": 736
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 24.54,
+        "endSec": 24.635,
+        "meanRms": 1772,
+        "meanZcr": 0.041,
+        "startFrame30fps": 736,
+        "endFrame30fps": 739
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 24.635,
+        "endSec": 24.725,
+        "meanRms": 4403,
+        "meanZcr": 0.057,
+        "startFrame30fps": 739,
+        "endFrame30fps": 742
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 24.725,
+        "endSec": 24.795,
+        "meanRms": 238,
+        "meanZcr": 0.007,
+        "startFrame30fps": 742,
+        "endFrame30fps": 744
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 24.795,
+        "endSec": 24.855,
+        "meanRms": 3788,
+        "meanZcr": 0.052,
+        "startFrame30fps": 744,
+        "endFrame30fps": 746
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 24.855,
+        "endSec": 24.91,
+        "meanRms": 4180,
+        "meanZcr": 0.017,
+        "startFrame30fps": 746,
+        "endFrame30fps": 747
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 24.91,
+        "endSec": 25.005,
+        "meanRms": 4492,
+        "meanZcr": 0.05,
+        "startFrame30fps": 747,
+        "endFrame30fps": 750
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 25.005,
+        "endSec": 25.07,
+        "meanRms": 371,
+        "meanZcr": 0.226,
+        "startFrame30fps": 750,
+        "endFrame30fps": 752
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 25.07,
+        "endSec": 25.12,
+        "meanRms": 1169,
+        "meanZcr": 0.393,
+        "startFrame30fps": 752,
+        "endFrame30fps": 754
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 25.12,
+        "endSec": 25.2,
+        "meanRms": 405,
+        "meanZcr": 0.08,
+        "startFrame30fps": 754,
+        "endFrame30fps": 756
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 25.2,
+        "endSec": 25.27,
+        "meanRms": 5092,
+        "meanZcr": 0.061,
+        "startFrame30fps": 756,
+        "endFrame30fps": 758
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 25.27,
+        "endSec": 25.325,
+        "meanRms": 4068,
+        "meanZcr": 0.022,
+        "startFrame30fps": 758,
+        "endFrame30fps": 760
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 25.325,
+        "endSec": 25.385,
+        "meanRms": 3941,
+        "meanZcr": 0.024,
+        "startFrame30fps": 760,
+        "endFrame30fps": 762
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "t",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 25.385,
+        "endSec": 25.425,
+        "meanRms": 3378,
+        "meanZcr": 0.021,
+        "startFrame30fps": 762,
+        "endFrame30fps": 763
+      },
+      {
+        "word": "automaticamente",
+        "phoneme": "ɪ",
+        "viseme": "EI_50",
+        "acType": "vowel",
+        "startSec": 25.425,
+        "endSec": 25.5,
+        "meanRms": 3304,
+        "meanZcr": 0.019,
+        "startFrame30fps": 763,
+        "endFrame30fps": 765
+      },
+      {
+        "word": "o",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 25.5,
+        "endSec": 25.54,
+        "startFrame30fps": 765,
+        "endFrame30fps": 766
+      },
+      {
+        "word": "consumo",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 25.54,
+        "endSec": 25.65,
+        "meanRms": 1944,
+        "meanZcr": 0.119,
+        "startFrame30fps": 766,
+        "endFrame30fps": 770
+      },
+      {
+        "word": "consumo",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 25.65,
+        "endSec": 25.81,
+        "meanRms": 4058,
+        "meanZcr": 0.054,
+        "startFrame30fps": 770,
+        "endFrame30fps": 774
+      },
+      {
+        "word": "consumo",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 25.81,
+        "endSec": 25.94,
+        "meanRms": 1840,
+        "meanZcr": 0.624,
+        "startFrame30fps": 774,
+        "endFrame30fps": 778
+      },
+      {
+        "word": "consumo",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 25.94,
+        "endSec": 26.05,
+        "meanRms": 4330,
+        "meanZcr": 0.045,
+        "startFrame30fps": 778,
+        "endFrame30fps": 782
+      },
+      {
+        "word": "consumo",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 26.05,
+        "endSec": 26.105,
+        "meanRms": 2585,
+        "meanZcr": 0.014,
+        "startFrame30fps": 782,
+        "endFrame30fps": 783
+      },
+      {
+        "word": "consumo",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 26.105,
+        "endSec": 26.175,
+        "meanRms": 2020,
+        "meanZcr": 0.017,
+        "startFrame30fps": 783,
+        "endFrame30fps": 785
+      },
+      {
+        "word": "[PAUSA]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 26.175,
+        "endSec": 27.15,
+        "startFrame30fps": 785,
+        "endFrame30fps": 815
+      },
+      {
+        "word": "Vamos",
+        "phoneme": "v",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 27.15,
+        "endSec": 27.24,
+        "meanRms": 5,
+        "meanZcr": 0.386,
+        "startFrame30fps": 815,
+        "endFrame30fps": 817
+      },
+      {
+        "word": "Vamos",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 27.24,
+        "endSec": 27.295,
+        "meanRms": 929,
+        "meanZcr": 0.018,
+        "startFrame30fps": 817,
+        "endFrame30fps": 819
+      },
+      {
+        "word": "Vamos",
+        "phoneme": "m",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 27.295,
+        "endSec": 27.35,
+        "meanRms": 4135,
+        "meanZcr": 0.049,
+        "startFrame30fps": 819,
+        "endFrame30fps": 821
+      },
+      {
+        "word": "Vamos",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 27.35,
+        "endSec": 27.44,
+        "meanRms": 5011,
+        "meanZcr": 0.05,
+        "startFrame30fps": 821,
+        "endFrame30fps": 823
+      },
+      {
+        "word": "Vamos",
+        "phoneme": "s",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 27.44,
+        "endSec": 27.48,
+        "meanRms": 3573,
+        "meanZcr": 0.041,
+        "startFrame30fps": 823,
+        "endFrame30fps": 824
+      },
+      {
+        "word": "fazer",
+        "phoneme": "f",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 27.48,
+        "endSec": 27.535,
+        "meanRms": 2460,
+        "meanZcr": 0.368,
+        "startFrame30fps": 824,
+        "endFrame30fps": 826
+      },
+      {
+        "word": "fazer",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 27.535,
+        "endSec": 27.595,
+        "meanRms": 2251,
+        "meanZcr": 0.678,
+        "startFrame30fps": 826,
+        "endFrame30fps": 828
+      },
+      {
+        "word": "fazer",
+        "phoneme": "z",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 27.595,
+        "endSec": 27.635,
+        "meanRms": 463,
+        "meanZcr": 0.261,
+        "startFrame30fps": 828,
+        "endFrame30fps": 829
+      },
+      {
+        "word": "fazer",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 27.635,
+        "endSec": 27.735,
+        "meanRms": 5389,
+        "meanZcr": 0.067,
+        "startFrame30fps": 829,
+        "endFrame30fps": 832
+      },
+      {
+        "word": "fazer",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 27.735,
+        "endSec": 27.835,
+        "meanRms": 1571,
+        "meanZcr": 0.465,
+        "startFrame30fps": 832,
+        "endFrame30fps": 835
+      },
+      {
+        "word": "essa",
+        "phoneme": "e",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 27.835,
+        "endSec": 27.9,
+        "meanRms": 6278,
+        "meanZcr": 0.045,
+        "startFrame30fps": 835,
+        "endFrame30fps": 837
+      },
+      {
+        "word": "essa",
+        "phoneme": "ʃ",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 27.9,
+        "endSec": 27.94,
+        "meanRms": 2757,
+        "meanZcr": 0.044,
+        "startFrame30fps": 837,
+        "endFrame30fps": 838
+      },
+      {
+        "word": "essa",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 27.94,
+        "endSec": 28.055,
+        "meanRms": 2486,
+        "meanZcr": 0.441,
+        "startFrame30fps": 838,
+        "endFrame30fps": 842
+      },
+      {
+        "word": "configuração",
+        "phoneme": "c",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 28.055,
+        "endSec": 28.095,
+        "meanRms": 1061,
+        "meanZcr": 0.656,
+        "startFrame30fps": 842,
+        "endFrame30fps": 843
+      },
+      {
+        "word": "configuração",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 28.095,
+        "endSec": 28.155,
+        "meanRms": 2987,
+        "meanZcr": 0.067,
+        "startFrame30fps": 843,
+        "endFrame30fps": 845
+      },
+      {
+        "word": "configuração",
+        "phoneme": "f",
+        "viseme": "FV",
+        "acType": "labiodental",
+        "startSec": 28.155,
+        "endSec": 28.235,
+        "meanRms": 366,
+        "meanZcr": 0.044,
+        "startFrame30fps": 845,
+        "endFrame30fps": 847
+      },
+      {
+        "word": "configuração",
+        "phoneme": "i",
+        "viseme": "EI",
+        "acType": "vowel",
+        "startSec": 28.235,
+        "endSec": 28.325,
+        "meanRms": 4825,
+        "meanZcr": 0.044,
+        "startFrame30fps": 847,
+        "endFrame30fps": 850
+      },
+      {
+        "word": "configuração",
+        "phoneme": "g",
+        "viseme": "EI_25",
+        "acType": "stop",
+        "startSec": 28.325,
+        "endSec": 28.405,
+        "meanRms": 393,
+        "meanZcr": 0.349,
+        "startFrame30fps": 850,
+        "endFrame30fps": 852
+      },
+      {
+        "word": "configuração",
+        "phoneme": "u",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 28.405,
+        "endSec": 28.465,
+        "meanRms": 2885,
+        "meanZcr": 0.025,
+        "startFrame30fps": 852,
+        "endFrame30fps": 854
+      },
+      {
+        "word": "configuração",
+        "phoneme": "r",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 28.465,
+        "endSec": 28.51,
+        "meanRms": 1532,
+        "meanZcr": 0.017,
+        "startFrame30fps": 854,
+        "endFrame30fps": 855
+      },
+      {
+        "word": "configuração",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 28.51,
+        "endSec": 28.67,
+        "meanRms": 4424,
+        "meanZcr": 0.046,
+        "startFrame30fps": 855,
+        "endFrame30fps": 860
+      },
+      {
+        "word": "configuração",
+        "phoneme": "ç",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 28.67,
+        "endSec": 28.765,
+        "meanRms": 1512,
+        "meanZcr": 0.68,
+        "startFrame30fps": 860,
+        "endFrame30fps": 863
+      },
+      {
+        "word": "configuração",
+        "phoneme": "ɐ̃",
+        "viseme": "A_75",
+        "acType": "vowel",
+        "startSec": 28.765,
+        "endSec": 28.82,
+        "meanRms": 2201,
+        "meanZcr": 0.428,
+        "startFrame30fps": 863,
+        "endFrame30fps": 865
+      },
+      {
+        "word": "configuração",
+        "phoneme": "w̃",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 28.82,
+        "endSec": 28.875,
+        "meanRms": 3772,
+        "meanZcr": 0.043,
+        "startFrame30fps": 865,
+        "endFrame30fps": 866
+      },
+      {
+        "word": "passo",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 28.875,
+        "endSec": 28.93,
+        "meanRms": 3114,
+        "meanZcr": 0.022,
+        "startFrame30fps": 866,
+        "endFrame30fps": 868
+      },
+      {
+        "word": "passo",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 28.93,
+        "endSec": 28.99,
+        "meanRms": 929,
+        "meanZcr": 0.015,
+        "startFrame30fps": 868,
+        "endFrame30fps": 870
+      },
+      {
+        "word": "passo",
+        "phoneme": "ʃ",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 28.99,
+        "endSec": 29.035,
+        "meanRms": 409,
+        "meanZcr": 0.012,
+        "startFrame30fps": 870,
+        "endFrame30fps": 871
+      },
+      {
+        "word": "passo",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 29.035,
+        "endSec": 29.2,
+        "meanRms": 4729,
+        "meanZcr": 0.215,
+        "startFrame30fps": 871,
+        "endFrame30fps": 876
+      },
+      {
+        "word": "a",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 29.2,
+        "endSec": 29.255,
+        "startFrame30fps": 876,
+        "endFrame30fps": 878
+      },
+      {
+        "word": "passo",
+        "phoneme": "p",
+        "viseme": "MBP",
+        "acType": "bilabial",
+        "startSec": 29.255,
+        "endSec": 29.445,
+        "meanRms": 1860,
+        "meanZcr": 0.056,
+        "startFrame30fps": 878,
+        "endFrame30fps": 883
+      },
+      {
+        "word": "passo",
+        "phoneme": "a",
+        "viseme": "A",
+        "acType": "vowel",
+        "startSec": 29.445,
+        "endSec": 29.615,
+        "meanRms": 4650,
+        "meanZcr": 0.076,
+        "startFrame30fps": 883,
+        "endFrame30fps": 888
+      },
+      {
+        "word": "passo",
+        "phoneme": "ʃ",
+        "viseme": "EI_50",
+        "acType": "fricative",
+        "startSec": 29.615,
+        "endSec": 29.76,
+        "meanRms": 1777,
+        "meanZcr": 0.645,
+        "startFrame30fps": 888,
+        "endFrame30fps": 893
+      },
+      {
+        "word": "passo",
+        "phoneme": "o",
+        "viseme": "OU",
+        "acType": "rounded",
+        "startSec": 29.76,
+        "endSec": 29.82,
+        "meanRms": 1923,
+        "meanZcr": 0.235,
+        "startFrame30fps": 893,
+        "endFrame30fps": 895
+      },
+      {
+        "word": "[PAUSA_FINAL]",
+        "phoneme": "sil",
+        "viseme": "REST",
+        "acType": "silence",
+        "startSec": 29.82,
+        "endSec": 31.1191,
+        "startFrame30fps": 895,
+        "endFrame30fps": 934
+      }
+    ]
+  }
+}

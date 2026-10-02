@@ -1,0 +1,294 @@
+1
+00:00:00,100 --> 00:00:05,620
+Na aula anterior, vimos como a nuvem
+participa do sistema da Oficina Horizonte.
+
+2
+00:00:06,070 --> 00:00:10,870
+Agora vamos localizar o lugar em que
+administraremos nosso laboratório.
+
+3
+00:00:11,340 --> 00:00:16,930
+O portal reúne muitos serviços, mas você
+não precisa explorar tudo de uma vez.
+
+4
+00:00:17,380 --> 00:00:21,650
+Vamos procurar apenas o que
+ajuda a começar com organização.
+
+5
+00:00:22,110 --> 00:00:27,890
+Antes de criar qualquer recurso, precisamos
+conferir em qual ambiente estamos trabalhando.
+
+6
+00:00:28,340 --> 00:00:31,860
+Isso evita fazer uma alteração no lugar errado.
+
+7
+00:00:32,770 --> 00:00:35,790
+A conta identifica quem está entrando.
+
+8
+00:00:36,240 --> 00:00:43,220
+O diretório, também chamado de tenant, reúne
+identidades de uma organização no Microsoft Entra ID.
+
+9
+00:00:43,670 --> 00:00:49,470
+A assinatura organiza o acesso e a administração
+dos recursos Azure naquele contexto.
+
+10
+00:00:49,920 --> 00:00:54,040
+Ela também participa da organização dos custos de uso.
+
+11
+00:00:54,490 --> 00:00:57,970
+Uma assinatura confia em um diretório por vez.
+
+12
+00:00:58,420 --> 00:01:02,930
+O mesmo diretório pode estar
+relacionado a várias assinaturas.
+
+13
+00:01:03,390 --> 00:01:08,520
+Portanto, diretório e assinatura não
+são nomes diferentes para a mesma coisa.
+
+14
+00:01:08,970 --> 00:01:13,980
+Vamos localizar esses elementos na
+interface, sem mudar sua associação.
+
+15
+00:01:14,880 --> 00:01:18,760
+Depois de entrar, confira o diretório ativo no portal.
+
+16
+00:01:19,210 --> 00:01:23,210
+Vou usar a assinatura reservada
+para nosso laboratório.
+
+17
+00:01:23,660 --> 00:01:28,770
+Na busca, procuramos a área de assinaturas
+e abrimos a assinatura escolhida.
+
+18
+00:01:29,230 --> 00:01:32,270
+Observe o nome antes de continuar.
+
+19
+00:01:32,720 --> 00:01:37,830
+Se você usa uma conta de trabalho,
+pode ter acesso a ambientes diferentes.
+
+20
+00:01:38,290 --> 00:01:43,160
+Não escolha uma assinatura de produção
+apenas porque ela apareceu na lista.
+
+21
+00:01:43,620 --> 00:01:48,730
+O importante é reconhecer o contexto em
+que você tem autorização para praticar.
+
+22
+00:01:49,190 --> 00:01:53,310
+Também precisamos entender o
+que os filtros deixam visível.
+
+23
+00:01:54,220 --> 00:01:59,420
+O filtro de assinaturas influencia
+os recursos mostrados nas listagens.
+
+24
+00:01:59,870 --> 00:02:05,600
+Uma lista vazia pode estar relacionada
+ao filtro, ao diretório ou às permissões.
+
+25
+00:02:06,050 --> 00:02:11,280
+Por isso, vamos conferir o contexto
+antes de concluir que algo desapareceu.
+
+26
+00:02:11,730 --> 00:02:15,110
+Agora procure a área de grupos de recursos.
+
+27
+00:02:15,560 --> 00:02:20,620
+É nela que organizaremos os componentes
+do laboratório na próxima aula.
+
+28
+00:02:21,070 --> 00:02:24,160
+Hoje vamos apenas reconhecer essa área.
+
+29
+00:02:24,610 --> 00:02:30,050
+Antes de criar componentes, falta preparar
+uma forma de acompanhar os gastos.
+
+30
+00:02:30,950 --> 00:02:35,960
+Um orçamento ajuda a acompanhar o
+gasto em relação a um valor planejado.
+
+31
+00:02:36,420 --> 00:02:40,880
+Você define o período, o valor
+e os alertas que deseja receber.
+
+32
+00:02:41,330 --> 00:02:46,170
+Ele não funciona como um botão que
+desliga recursos automaticamente.
+
+33
+00:02:46,630 --> 00:02:50,920
+Se o consumo continuar, a
+cobrança também pode continuar.
+
+34
+00:02:51,370 --> 00:02:55,250
+Os dados de custo e os avisos não são instantâneos.
+
+35
+00:02:55,700 --> 00:03:01,980
+Vamos configurar um exemplo simples, sem confundir
+o alerta com uma garantia de limite financeiro.
+
+36
+00:03:02,430 --> 00:03:05,810
+O valor usado na tela é apenas didático.
+
+37
+00:03:06,710 --> 00:03:11,430
+Dentro da assinatura de laboratório,
+abrimos a área de orçamentos.
+
+38
+00:03:11,880 --> 00:03:16,080
+Confira o escopo mostrado antes
+de preencher o formulário.
+
+39
+00:03:16,530 --> 00:03:20,440
+Dê ao orçamento um nome que identifique seu objetivo.
+
+40
+00:03:20,900 --> 00:03:25,600
+Vamos usar um período mensal e o
+valor de exemplo exibido na tela.
+
+41
+00:03:26,070 --> 00:03:29,620
+A moeda deve ser a que aparece no seu ambiente.
+
+42
+00:03:30,070 --> 00:03:35,610
+Em seguida, configuramos avisos em
+diferentes percentuais do valor planejado.
+
+43
+00:03:36,070 --> 00:03:40,670
+O endereço de recebimento precisa
+ser um endereço que você controla.
+
+44
+00:03:41,120 --> 00:03:44,930
+Revise os campos e só então conclua a configuração.
+
+45
+00:03:45,830 --> 00:03:49,640
+Agora confira se o orçamento aparece na listagem.
+
+46
+00:03:50,100 --> 00:03:54,490
+Abra a configuração e confirme
+período, valor e destinatário.
+
+47
+00:03:54,940 --> 00:03:58,850
+Salvar o formulário não dispensa essa verificação.
+
+48
+00:03:59,310 --> 00:04:05,550
+Se a opção não estiver disponível, confira as
+permissões e a disponibilidade no seu ambiente.
+
+49
+00:04:06,000 --> 00:04:12,070
+Assinaturas novas podem levar algum tempo
+para disponibilizar funcionalidades de custos.
+
+50
+00:04:12,530 --> 00:04:18,330
+Nesse caso, acompanhe a demonstração e faça
+a prática quando o acesso estiver disponível.
+
+51
+00:04:18,780 --> 00:04:23,530
+Não precisamos criar recursos cobrados
+para entender esse procedimento.
+
+52
+00:04:24,430 --> 00:04:28,410
+Imagine que o consumo
+ultrapassou o valor do orçamento.
+
+53
+00:04:28,860 --> 00:04:33,370
+O orçamento, sozinho, interrompe
+o funcionamento dos recursos?
+
+54
+00:04:38,490 --> 00:04:43,240
+Não. Ele acompanha os custos e
+emite os alertas configurados.
+
+55
+00:04:43,690 --> 00:04:48,130
+Interromper ou ajustar recursos
+exige outra ação apropriada.
+
+56
+00:04:48,580 --> 00:04:53,740
+Esse detalhe ajuda a evitar uma expectativa
+que o orçamento não pode cumprir.
+
+57
+00:04:54,190 --> 00:05:00,190
+Antes de sair, confirme que você sabe
+localizar sua assinatura e o orçamento criado.
+
+58
+00:05:01,090 --> 00:05:06,390
+Já sabemos em qual ambiente trabalhar e
+onde acompanhar o planejamento de custos.
+
+59
+00:05:06,860 --> 00:05:11,370
+Na próxima aula, vamos criar o
+grupo de recursos do laboratório.
+
+60
+00:05:11,830 --> 00:05:17,030
+Também vamos identificá-lo e testar
+uma proteção contra exclusão acidental.
+
+61
+00:05:17,500 --> 00:05:22,300
+Você verá cada configuração sendo
+feita e o resultado que ela produz.
+
+62
+00:05:22,770 --> 00:05:28,050
+Mantenha o orçamento: voltaremos a
+ele ao aprofundar a gestão de custos.

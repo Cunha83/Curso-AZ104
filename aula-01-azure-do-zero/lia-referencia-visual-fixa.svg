@@ -1,0 +1,63 @@
+<svg viewBox="0 0 1920 1080" width="1920" height="1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Referência Visual Fixa da Apresentadora Lia - Curso Azure do Zero ao AZ-104">
+  <defs>
+    <radialGradient id="studioBg" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#152C52"/>
+      <stop offset="100%" stop-color="#0A1628"/>
+    </radialGradient>
+    <radialGradient id="cyanHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#0A1628" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6E4427"/>
+      <stop offset="50%" stop-color="#523018"/>
+      <stop offset="100%" stop-color="#381F0E"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6CFA9"/>
+      <stop offset="100%" stop-color="#DFAB80"/>
+    </linearGradient>
+    <linearGradient id="blazerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo 16:9 Azul-Escuro (#0A1628) com detalhes Ciano (#00D4FF) -->
+  <rect width="1920" height="1080" fill="url(#studioBg)"/>
+  <circle cx="960" cy="520" r="430" fill="url(#cyanHalo)"/>
+  <circle cx="960" cy="520" r="370" stroke="#00D4FF" stroke-opacity="0.35" stroke-width="3" fill="none"/>
+
+  <!-- Avatar 3D Estilizado Central: Lia (Mulher adulta, cabelo castanho na altura dos ombros, blazer azul e camiseta clara) -->
+  <g transform="translate(520, 120) scale(4)">
+    <!-- Cabelo castanho na altura dos ombros (camada traseira) -->
+    <path d="M58 62 C42 105, 45 162, 64 176 L156 176 C175 162, 178 105, 162 62 C148 26, 72 26, 58 62 Z" fill="url(#hairGrad)"/>
+    <!-- Pescoço e sombra suave -->
+    <rect x="96" y="120" width="28" height="32" rx="12" fill="url(#skinGrad)"/>
+    <!-- Camiseta clara (#F8FAFC) -->
+    <path d="M72 148 L148 148 L156 215 L64 215 Z" fill="#F8FAFC"/>
+    <!-- Blazer Azul Profissional (#2563EB -> #1E3A8A) -->
+    <path d="M42 156 C55 140, 82 143, 95 148 L103 215 L35 215 Z" fill="url(#blazerGrad)"/>
+    <path d="M178 156 C165 140, 138 143, 125 148 L117 215 L185 215 Z" fill="url(#blazerGrad)"/>
+    <!-- Lapelas do Blazer -->
+    <polygon points="84,145 103,194 95,148" fill="#1D4ED8"/>
+    <polygon points="136,145 117,194 125,148" fill="#1D4ED8"/>
+    <!-- Rosto acolhedor e expressivo -->
+    <ellipse cx="110" cy="86" rx="37" ry="43" fill="url(#skinGrad)"/>
+    <!-- Cabelo frontal repartido -->
+    <path d="M71 76 C75 42, 120 38, 148 66 C142 46, 90 45, 71 76 Z" fill="url(#hairGrad)"/>
+    <!-- Sobrancelhas -->
+    <path d="M87 72 Q95 68 103 72" stroke="#381F0E" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <path d="M117 72 Q125 68 133 72" stroke="#381F0E" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+    <!-- Olhos castanhos com brilho 3D -->
+    <ellipse cx="95" cy="83" rx="5.8" ry="6.2" fill="#2A160D"/>
+    <ellipse cx="125" cy="83" rx="5.8" ry="6.2" fill="#2A160D"/>
+    <circle cx="93.5" cy="81" r="2.1" fill="#FFFFFF"/>
+    <circle cx="123.5" cy="81" r="2.1" fill="#FFFFFF"/>
+    <!-- Nariz -->
+    <path d="M110 84 L107 97 L113 98" stroke="#C58B59" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- Sorriso confiante e acolhedor -->
+    <path d="M98 107 Q110 117 122 107 Z" fill="#BE123C"/>
+    <path d="M101 108 L119 108" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>
